@@ -211,14 +211,14 @@ span.center-frame {
 .credit-title {
   font-weight: 800;
   font-size: 18px;
-  color: white;
+  color: #000;
   display:block;
 }
 
 .credit-info {
   font-weight: 400;
   font-size: 16px;
-  color: white;
+  color: #000;
   display:block;
 }
 
@@ -269,17 +269,27 @@ background-size: 100% 2em;
  .credit-section-color {
   margin-top:30px; 
   padding-top:30px; 
-  background-color: #000;
+  background-color: #fff;
 }
 
 .white-hr {
-     margin-top: 1rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #000;
   }
 
 .head-space{
   padding-top:80px;
+}
 
+.full-img {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
