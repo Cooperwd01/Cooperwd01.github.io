@@ -151,8 +151,14 @@ span.center-frame {
 
 @media only screen and (max-width: 864px) {
   .vid-clip {
-    width:350px;
-    margin-left:-50px;
+    width:100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .vid-clip {
+    width:300px;
+    margin-left:-100px;
   }
 }
 
