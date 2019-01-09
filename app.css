@@ -293,3 +293,7 @@ background-size: 100% 2em;
   padding-left: 0;
   padding-right: 0;
 }
+
+.credit-section {
+  margin-bottom:30px;
+}
