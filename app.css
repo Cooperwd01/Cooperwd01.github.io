@@ -305,12 +305,20 @@ a.anchor {
     visibility: hidden;
 }
 
-.bh-text {
+.bh-text-big {
   font-family: 'Shrikhand', cursive;
   font-size: 72px;
   text-align: center;
   display: block;
   margin-top: 40px;
+}
+
+.bh-text-medium {
+  font-family: 'Shrikhand', cursive;
+  font-size: 22px;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
 }
 
 .bh-p {
@@ -319,4 +327,59 @@ a.anchor {
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 20px;
+}
+
+input.contact-input {
+  display:block;
+  max-width:400px;
+  min-width:300px;
+  /*border: 3px solid #333;*/
+}
+
+/*input.contact-input:focus {
+  display:block;
+  max-width:400px;
+  min-width:300px;
+  border: 3px solid #333;
+  outline: 4px solid #feb645;
+}
+*/
+.form-container {
+  margin-left:15%;
+  margin-right:10%;
+}
+
+.form-group {
+  margin-top: 15px;
+  margin-bottom: 30px !important;
+}
+
+label.form-label {
+  font-size: 18px;
+  font-weight: 600;
+  font-family:arial, sans-serif;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background: #6610f2;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100px;
+}
+
+input[type="submit"]:hover {
+    padding: 10px;
+    background: #343a40;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100px;
+}
+
+form.form-style {
+    margin-left: 12px;
 }

@@ -22,20 +22,46 @@
 <div class="container">
   <div class="row"><a id="about-us" class="anchor"></a>
     <div class="para-text col">
-      <h1 class="bh-text">I'm the big head lol</h1>
+      <h1 class="bh-text-big">I'm the big head lol</h1>
     	<center><img data-aos="flip-left" src="images/big-head.jpg" alt="This is a picture of Will Cooper wearing a super dumb hat" style="width:250px;" /></center>
     	<p class="bh-p">Hi, I'm Will Cooper, comedy writer and website maker. By the way how much do you want to beat me up in this picture?</p>
 
     	<p class="bh-p">Instead of that, get in touch for comedy jobs. We're really good. Cheers</p>
-
-    	<form action="https://formspree.io/cooperbrotherswrite@gmail.com" method="POST">
-  			<input type="text" name="name" style="border: 5px solid black">
-  			<input type="email" name="_replyto" style="border: 5px solid black">
- 			<input type="submit" value="Send">
-		</form>
     </div>    
    </div>
-</div>    
+</div>
+<div class="container">
+  	<div class="row">
+  		<div class="para-text col">
+  			<h2 class="bh-text-medium">Contact Us</h2>
+  		</div>
+  	</div>
+</div>  		
+<div class="container">
+  	<div class="row">
+		<div class="form-container">
+			<form class="form-style" action="https://formspree.io/cooperbrotherswrite@gmail.com" method="POST">
+				<div class="form-group">
+					<label class="form-label" for="name">Name</label>
+					<input id="name" class="contact-input" required type="text" name="name">
+				<div class="form-group">
+					<label class="form-label" for="email">Email</label>
+					<p style="font-size:16px; font-color:silver">For example, email@example.com</p>
+					<input id="email" class="contact-input" required type="email" name="_replyto">
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="telephone">Telephone</label>
+					<input id="telephone" class="contact-input" type="tel" name="tel">
+				</div>
+				<div class="form-group">
+					<label class="form-label" for="message">Message</label>
+					<textarea id="message" rows="3" class="contact-input" required type="text" name="text" placeholder="Your message"></textarea>
+				</div>
+				<input class="send-btn" type="submit" value="Send">
+			</form> 
+		</div>	   
+	</div>
+</div>
 
 <script>
   AOS.init();
