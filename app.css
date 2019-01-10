@@ -329,6 +329,7 @@ a.anchor {
   margin-top: 20px;
 }
 
+/* START CONTACT FORM CSS */
 input.contact-input {
   display:block;
   max-width:400px;
@@ -361,29 +362,32 @@ input.contact-input {
 }
 
 label.form-label {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   font-family:arial, sans-serif;
+  color: #fff;
 }
 
 input[type="submit"] {
     padding: 10px;
-    background: #6610f2;
+    background: #E0009D;
     border: none;
     color: white;
     font-size: 20px;
     font-weight: 400;
     width: 100px;
+    border: 2px solid white;
 }
 
 input[type="submit"]:hover {
     padding: 10px;
-    background: #343a40;
+    background: #70004F;
     border: none;
     color: white;
     font-size: 20px;
     font-weight: 400;
     width: 100px;
+    border: 2px solid white;
 }
 
 form.form-style {
@@ -393,3 +397,52 @@ form.form-style {
 footer.page-footer .footer-copyright {
 line-height:20px;
   }
+
+.mobile-style {
+  display:none;
+}
+
+@media only screen and (max-width: 768px) {
+.mobile-style {
+  display:block;
+  }
+}
+
+div.form-color {
+  background-color: #288628;
+  background: -moz-linear-gradient(0deg, rgba(50,97,50,1) 17%, rgba(22,175,22,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(50,97,50,1) 17%, rgba(22,175,22,1) 100%);
+  background: linear-gradient(0deg, rgba(50,97,50,1) 17%, rgba(22,175,22,1) 100%);
+} 
+
+h2.form-title {
+  color: #fff;
+}
+
+input, select, textarea{
+    color: #fff;
+    font-size: 16px;
+}
+/* sets the colour of the place holder text in the text area*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+textarea#message {
+    border: 2px solid white;
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+    display: block;
+}
+
+/* END CONTACT FORM CSS */
