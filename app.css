@@ -158,6 +158,14 @@ span.center-frame {
   font-weight:500;
 }
 
+@media only screen and (max-width: 399px) {
+span.center-frame {
+  text-align:center;
+  font-weight:500;
+  margin-left:15px;
+  }
+}
+
 @media only screen and (max-width: 864px) {
   .vid-clip {
     width:120%;
