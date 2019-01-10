@@ -487,12 +487,12 @@ textarea#message {
 @media only screen and (max-width: 591px) {
 .title-text {
   font-family: 'Gloria Hallelujah', sans-serif;
-  font-size: 36px;
+  font-size: 32px;
   text-shadow:2px 2px 20px #000;
   }
 .subtitle-text {
   font-family: 'Gloria Hallelujah', sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   text-shadow:2px 2px 20px #000;
   }
 }
