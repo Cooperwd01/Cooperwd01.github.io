@@ -162,7 +162,7 @@ span.center-frame {
 span.center-frame {
   text-align:center;
   font-weight:500;
-  margin-left:15px;
+  margin-left:-15px;
   }
 }
 
