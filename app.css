@@ -69,6 +69,15 @@ display:none;
   margin-right:20px;
 }
 
+a.nav-link {
+    font-size: 20px;
+}
+
+a.nav-link:hover {
+    font-size: 20px;
+    color:#16af16 !important;
+}
+
 .title-img {
   overflow:hidden;
   background: url(images/site-1.jpg) no-repeat;
@@ -151,7 +160,8 @@ span.center-frame {
 
 @media only screen and (max-width: 864px) {
   .vid-clip {
-    width:100%;
+    width:120%;
+    height:120%;
   }
 }
 
@@ -446,3 +456,49 @@ textarea#message {
 }
 
 /* END CONTACT FORM CSS */
+
+.title-text {
+  font-family: 'Gloria Hallelujah', sans-serif;
+  font-size: 90px;
+  text-shadow:2px 2px 20px #000;
+
+}
+
+.subtitle-text {
+  font-family: 'Gloria Hallelujah', sans-serif;
+  font-size: 60px;
+  text-shadow:2px 2px 20px #000;
+}
+
+@media only screen and (max-width: 824px) {
+.title-text {
+  font-family: 'Gloria Hallelujah', sans-serif;
+  font-size: 60px;
+  text-shadow:2px 2px 20px #000;
+}
+
+.subtitle-text {
+  font-family: 'Gloria Hallelujah', sans-serif;
+  font-size: 40px;
+  text-shadow:2px 2px 20px #000;
+  }
+}
+
+@media only screen and (max-width: 591px) {
+.title-text {
+  font-family: 'Gloria Hallelujah', sans-serif;
+  font-size: 36px;
+  text-shadow:2px 2px 20px #000;
+  }
+.subtitle-text {
+  font-family: 'Gloria Hallelujah', sans-serif;
+  font-size: 26px;
+  text-shadow:2px 2px 20px #000;
+  }
+}
+
+.body-text {
+  font-family: 'Gloria Hallelujah', sans-serif;
+  margin-bottom:20px;
+}
+
