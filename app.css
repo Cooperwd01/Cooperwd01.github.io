@@ -492,6 +492,12 @@ textarea#message {
   }
 }
 
+.body-text {
+  font-family: 'Gloria Hallelujah', sans-serif;
+  margin-bottom:15px;
+  font-size: 40px;
+}
+
 @media only screen and (max-width: 591px) {
 .title-text {
   font-family: 'Gloria Hallelujah', sans-serif;
@@ -506,14 +512,8 @@ textarea#message {
 .body-text {
   font-family: 'Gloria Hallelujah', sans-serif;
   margin-bottom:15px;
-  font-size: 2rem;
-}
-}
-
-.body-text {
-  font-family: 'Gloria Hallelujah', sans-serif;
-  margin-bottom:15px;
-  font-size: 3rem;
+  font-size: 26px;
+  }
 }
 
 
