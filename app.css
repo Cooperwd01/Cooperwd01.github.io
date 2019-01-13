@@ -82,7 +82,7 @@ a.nav-link:hover {
 
 .title-img {
   overflow:hidden;
-  background: url(images/ross-room.png) no-repeat;
+  background: url(images/site-1.jpg) no-repeat;
   background-size: cover;
   color:white;
   font-size:60px;
@@ -531,3 +531,10 @@ textarea#message {
     box-sizing: inherit;
   }
 
+img.img-show {
+    width: 70px;
+    display: inline;
+    float: left;
+    margin-right: 20px;
+    /* margin-bottom: 50px; */
+}
