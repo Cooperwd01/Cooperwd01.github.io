@@ -72,11 +72,17 @@ display:none;
 a.nav-link {
     font-size: 20px;
     font-weight: 600;
+    border-bottom: 2px solid #fff;
+    margin-left:10px;
+    margin-right: 10px;
 }
 
 a.nav-link:hover {
     font-size: 20px;
     color:#16af16 !important;
+    border-bottom: 2px solid #16af16;
+    margin-left:10px;
+    margin-right: 10px;
     transition: background 0.2s ease-in-out;
 }
 
@@ -524,13 +530,13 @@ textarea#message {
 /* Prevents breaking box dimensions with margin, padding or borders.
 
 */
-  html {
+/*  html {
     box-sizing: border-box;
   }
   *, *:before, *:after {
     box-sizing: inherit;
   }
-
+*/
 img.img-show {
     width: 70px;
     display: inline;
