@@ -509,6 +509,12 @@ textarea#message {
   color:#288628;
 }
 
+.intro-text {
+    font-weight: 600;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 @media only screen and (max-width: 591px) {
 .title-text {
   font-family: 'Gloria Hallelujah', sans-serif;
