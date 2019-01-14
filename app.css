@@ -69,6 +69,13 @@ display:none;
   margin-right:20px;
 }
 
+@media only screen and (max-width: 640px) {
+.nav-img { 
+  width:80px; 
+  margin-right:20px;
+  }
+}
+
 a.nav-link {
     font-size: 20px;
     font-weight: 600;
@@ -531,6 +538,13 @@ textarea#message {
   margin-bottom:15px;
   font-size: 26px;
   }
+}
+
+p.footer-text{
+  font-family: 'Gloria Hallelujah', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
 }
 
 /* Prevents breaking box dimensions with margin, padding or borders.
