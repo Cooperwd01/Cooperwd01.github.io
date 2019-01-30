@@ -68,19 +68,6 @@ display:none;
   position:fixed !important; 
   z-index: 1030; 
   width:100%;
-  background-color: #ffffff;
-  /* IE10+ */ 
-  background-image: -ms-linear-gradient(bottom right, #14B1FF 0%, #00FF9A 100%);
-  /* Mozilla Firefox */ 
-  background-image: -moz-linear-gradient(bottom right, #14B1FF 0%, #00FF9A 100%);
-  /* Opera */ 
-  background-image: -o-linear-gradient(bottom right, #14B1FF 0%, #00FF9A 100%);
-  /* Webkit (Safari/Chrome 10) */ 
-  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #14B1FF), color-stop(100, #00FF9A));
-  /* Webkit (Chrome 11+) */ 
-  background-image: -webkit-linear-gradient(bottom right, #14B1FF 0%, #00FF9A 100%);
-  /* W3C Markup */ 
-  background-image: linear-gradient(to top left, #14B1FF 0%, #00FF9A 100%);
   }
 }
 
@@ -121,18 +108,39 @@ li.nav-item:hover{
    } 
 }
 
+@media only screen and (max-width: 991px) {
+li.nav-item{
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid #00ff9a;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:5px;
+   } 
+}
+
+@media only screen and (max-width: 991px) {
+li.nav-item:hover{
+    background-color: #00ff9a;
+    color: black;
+    border-bottom: 2px solid #00ff9a;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:5px;
+    transition: background 0.2s ease-in-out;
+   } 
+}
+
+
 a.nav-link {
     font-size: 20px;
     font-weight: 600;
     margin-left:10px;
     margin-right: 10px;
-    color:#000 !important;
-
 }
 
 a.nav-link:hover {
     font-size: 20px;
-    color:#fff !important;
     margin-left:10px;
     margin-right: 10px;
     transition: background 0.2s ease-in-out;
