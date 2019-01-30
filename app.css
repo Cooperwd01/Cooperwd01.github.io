@@ -58,7 +58,30 @@ display:none;
   position:fixed !important; 
   z-index: 1030; 
   width:100%;
-  background: linear-gradient(to right, rgb(255, 0, 132), rgb(51, 0, 27));
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300ff9a' fill-opacity='0.52'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+@media only screen and (max-width: 991px) {
+.nav-fixed {
+  background-color: #fff;
+  position:fixed !important; 
+  z-index: 1030; 
+  width:100%;
+  background-color: #ffffff;
+  /* IE10+ */ 
+  background-image: -ms-linear-gradient(bottom right, #14B1FF 0%, #00FF9A 100%);
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(bottom right, #14B1FF 0%, #00FF9A 100%);
+  /* Opera */ 
+  background-image: -o-linear-gradient(bottom right, #14B1FF 0%, #00FF9A 100%);
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #14B1FF), color-stop(100, #00FF9A));
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(bottom right, #14B1FF 0%, #00FF9A 100%);
+  /* W3C Markup */ 
+  background-image: linear-gradient(to top left, #14B1FF 0%, #00FF9A 100%);
+  }
 }
 
 .footer-style{
@@ -77,21 +100,48 @@ display:none;
   }
 }
 
+@media only screen and (min-width: 992px) {
+li.nav-item{
+    background-color: white;
+    color: black;
+    border: 2px solid #00ff9a;
+    margin-right: 10px;
+    margin-left: 10px;
+   } 
+}
+
+@media only screen and (min-width: 992px) {
+li.nav-item:hover{
+    background-color: #00ff9a;
+    color: black;
+    border: 2px solid #00ff9a;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: background 0.2s ease-in-out;
+   } 
+}
+
 a.nav-link {
     font-size: 20px;
     font-weight: 600;
-    border-bottom: 2px solid transparent;
     margin-left:10px;
     margin-right: 10px;
+    color:#000 !important;
+
 }
 
 a.nav-link:hover {
     font-size: 20px;
-    color:#f1f442 !important;
-    border-bottom: 2px solid #f1f442;
+    color:#fff !important;
     margin-left:10px;
     margin-right: 10px;
     transition: background 0.2s ease-in-out;
+}
+
+.navbar-toggler{
+  background-color: white !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 
 .title-img {
@@ -576,7 +626,6 @@ img.img-show {
 a.nav-link {
     font-size: 20px;
     font-weight: 600;
-    border-bottom: 2px solid #fff;
     margin-left: 10px;
     margin-right: 10px;
     width: 200px;
