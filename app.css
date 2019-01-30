@@ -474,22 +474,22 @@ label.form-label {
 
 input[type="submit"] {
     padding: 10px;
-    background: #E0009D;
+    background: #fff;
     border: none;
-    color: white;
+    color: #1B1C37;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     width: 100px;
     border: 2px solid white;
 }
 
 input[type="submit"]:hover {
     padding: 10px;
-    background: #70004F;
+    background: #00ff9a;
     border: none;
-    color: white;
+    color: #1B1C37;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     width: 100px;
     border: 2px solid white;
     transition: background 0.2s ease-in-out;
