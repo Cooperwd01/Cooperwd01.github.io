@@ -137,14 +137,14 @@ a.nav-link {
     font-weight: 600;
     margin-left:10px;
     margin-right: 10px;
-    color: #1B1C37 !important;
+    color: #1B1C37;
 }
 
 a.nav-link:hover {
     font-size: 20px;
     margin-left:10px;
     margin-right: 10px;
-    color: #1B1C37 !important;
+    color: #1B1C37;
     transition: background 0.2s ease-in-out;
 }
 
@@ -437,10 +437,10 @@ a.anchor {
 
 /* START CONTACT FORM CSS */
 input.contact-input {
-  display:block;
-  max-width:400px;
+  /*display:block;*/
+  /*max-width:400px;*/
   min-width:300px;
-  /*border: 3px solid #333;*/
+  border: 3px solid #fff;
 }
 
 /*input.contact-input:focus {
@@ -545,10 +545,10 @@ input, select, textarea{
 }
 
 textarea#message {
-    border: 2px solid white;
+    border: 3px solid white;
     padding: 5px;
-    width: 300px;
-    height: 300px;
+    width: 135%;
+    height: 100px;
     display: block;
 }
 
