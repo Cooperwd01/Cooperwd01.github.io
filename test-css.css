@@ -1,5 +1,5 @@
 .bg-img{
-	width:99%%;
+	width:99%;
 	overflow: hidden;
     background: url(images/the-stand.jpg) no-repeat;
     background-size: cover;
@@ -131,14 +131,14 @@ li.nav-item {
 
 li.nav-item:hover {
     background-color: transparent;
-    color: #fff;
+    /*color: #fff;*/
     border: 2px solid #fff;
     margin-right: 10px;
     margin-left: 10px;
    /* margin-top:20px;*/
 	}
 
-a.nav-link {
+.nav-link {
     font-size: 20px;
     font-weight: 600;
     margin-left: 10px;
@@ -146,7 +146,7 @@ a.nav-link {
     color: #fff;
 }
 
-a.nav-link:hover {
+.nav-link:hover {
     font-size: 20px;
     font-weight: 600;
     margin-left: 10px;
@@ -228,3 +228,44 @@ img.media-icon {
     width: 120px;
     margin-right: 0px; 
 }
+
+@media only screen and (max-width: 991px){
+.nav-img {
+    width: 80px;
+    margin-right: 0px; 
+    }
+.nav-fixed {
+    background-color:#1B1C37;
+    }
+li.nav-item {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid transparent;
+    margin-right: 10px;
+    margin-left: 10px;
+    }    
+}
+
+.navbar-toggler {
+    background-color: transparent !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+ }   
+
+ .nav-scroll {
+  color: #00ff9a !important;
+}
+
+.nav-scroll:hover {
+  color: #00ff9a !important;
+}
+
+.scroll-text:hover {
+    background-color: #00ff9a;
+    color: #00ff9a !important;
+    border: 2px solid #00ff9a !important;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: background 0.2s ease-in-out; 
+}
+
