@@ -8,7 +8,7 @@ function unhover(element) {
 
 
 // Change nav bar on scroll
-/* $(function(){
+ $(function(){
   $(window).on('load scroll resize orientationchange', function () {
           // checks if window is scrolled more than 500px, adds/removes solid class
           if($(this).scrollTop() > 10) { 
@@ -32,4 +32,4 @@ function unhover(element) {
               $('.nav-img').attr('src', 'images/mouse-white.png');
           }
         });
-});*/
+});
