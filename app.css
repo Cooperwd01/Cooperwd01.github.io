@@ -1,4 +1,4 @@
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/*@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);*/
 @import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
 
 .nav-fixed {
@@ -104,7 +104,7 @@ a.nav-link:hover {
 
 .title-img {
   overflow:hidden;
-  background: url(images/the-stand.jpg) no-repeat;
+  background: url(images/the-stand-1500.jpg) no-repeat;
   background-size: cover;
   color:white;
   font-size:60px;
@@ -112,6 +112,7 @@ a.nav-link:hover {
   padding:100px 100px;
   text-align: center;
   width: 100%;
+  height: 90vh;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
   margin-top: -1px;
 }
@@ -122,6 +123,7 @@ a.nav-link:hover {
     font-weight: 300;
     padding: 10%;
     width: 100%;
+    height:100%;
     background-size: 100%;
   }
 }
@@ -148,7 +150,7 @@ h2.date-title {
 
 @media only screen and (max-width: 864px) {
   .vid-clip {
-    width:120%;
+    width:100%;
     height:120%;
   }
 }
@@ -389,4 +391,11 @@ textarea#message {
   margin-bottom:15px;
   font-size: 26px;
   }
+}
+
+@media only screen and (max-width: 480px) {
+   body { 
+      font-size: 2em; 
+   }
+
 }
