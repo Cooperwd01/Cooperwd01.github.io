@@ -239,6 +239,9 @@ span.center-frame {
   }
 }
 
+.vid-clip {
+    border: 8px solid #03e38e;
+  }
 
 .white-text {
   font-color:white;
