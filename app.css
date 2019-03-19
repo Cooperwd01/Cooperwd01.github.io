@@ -22,7 +22,7 @@
 }
 
 .nav-img {
-    width: 150px;
+    width: 120px;
     margin-right: 20px;
 }
 
@@ -111,7 +111,7 @@ a.nav-link:hover {
     width: 100%;
     height: 90vh;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .4);
-    margin-top: -1px;
+    margin-top: -20px;
 }
 
 @media only screen and (max-width:864px) {
