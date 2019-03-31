@@ -1,20 +1,23 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
 .nav-fixed {
-    background-color: #fff;
     position: fixed!important;
     z-index: 1030;
     width: 100%;
-    background-color: #fff;
+    background-color: #efefef;
     background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300ff9a' fill-opacity='0.52'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 @media only screen and (max-width:991px) {
     .nav-fixed {
-        background-color: #fff;
+        background-color: #efefef;
         position: fixed!important;
         z-index: 1030;
         width: 100%;
     }
+}
+
+body {
+    background-color: #efefef !important;
 }
 
 .footer-style {
@@ -35,7 +38,7 @@
 
 @media only screen and (min-width:992px) {
     li.nav-item {
-        background-color: #fff;
+        background-color: #efefef;
         color: #1b1c37;
         border: 2px solid #00ff9a;
         margin-right: 10px;
@@ -56,7 +59,7 @@
 
 @media only screen and (max-width:991px) {
     li.nav-item {
-        background-color: #fff;
+        background-color: #efefef;
         color: #1b1c37;
         border-bottom: 2px solid #00ff9a;
         margin-right: 10px;
@@ -94,7 +97,7 @@ a.nav-link:hover {
 }
 
 .navbar-toggler {
-    background-color: #fff!important;
+    background-color: #efefef !important;
     padding-left: 10px!important;
     padding-right: 10px!important;
 }
@@ -103,7 +106,7 @@ a.nav-link:hover {
     overflow: hidden;
     background: url(images/the-stand-1500.jpg) no-repeat;
     background-size: cover;
-    color: #fff;
+    color: #efefef;
     font-size: 60px;
     font-weight: 600;
     padding: 100px 100px;
@@ -162,14 +165,14 @@ h2.date-title {
 .credit-title {
     font-weight: 800;
     font-size: 18px;
-    color: #000;
+    color: #0B0B0B;
     display: block;
 }
 
 .credit-info {
     font-weight: 400;
     font-size: 16px;
-    color: #000;
+    color: #0B0B0B;
     display: block;
 }
 
@@ -189,14 +192,14 @@ footer.page-footer a {
 .credit-section-color {
     margin-top: 30px;
     padding-top: 30px;
-    background-color: #fff;
+    background-color: #efefef;
 }
 
 .white-hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 1px solid #000;
+    border-top: 1px solid #0B0B0B;
 }
 
 .head-space {
@@ -223,13 +226,13 @@ input.contact-input {
     display: block;
     max-width: 300px;
     min-width: 400px;
-    border: 3px solid #fff;
+    border: 3px solid #efefef;
     padding-left:10px;
     padding-right:10px;
 }
 
 input.contact-input:focus{
-	border: 3px solid #fff !important;
+	border: 3px solid #efefef !important;
 	outline: 3px solid #0AAE77 !important;
 	/*border-bottom:none !important;*/
 	box-shadow: none !important;
@@ -237,7 +240,7 @@ input.contact-input:focus{
 }
 
 textarea.contact-input:focus{
-	border: 3px solid #fff !important;
+	border: 3px solid #efefef !important;
 	outline: 3px solid #0AAE77 !important;
 	/*border-bottom:none !important;*/
 	box-shadow: none !important;
@@ -247,7 +250,7 @@ textarea.contact-input:focus{
         display: block;
         max-width: 250px;
         min-width: 200px;
-        border: 3px solid #fff;
+        border: 3px solid #efefef;
     }
 }
 
@@ -272,18 +275,18 @@ label.form-label {
     font-size: 20px;
     font-weight: 600;
     font-family: arial, sans-serif;
-    color: #fff;
+    color: #efefef;
 }
 
 input[type=submit] {
     padding: 10px;
-    background: #fff;
+    background: #efefef;
     border: none;
     color: #1b1c37;
     font-size: 20px;
     font-weight: 600;
     width: 100px;
-    border: 2px solid #fff;
+    border: 2px solid #efefef;
 }
 
 input[type=submit]:hover {
@@ -294,7 +297,7 @@ input[type=submit]:hover {
     font-size: 20px;
     font-weight: 600;
     width: 100px;
-    border: 2px solid #fff;
+    border: 2px solid #efefef;
     transition: background .2s ease-in-out;
 }
 
@@ -312,34 +315,34 @@ div.form-color {
 }
 
 h2.form-title {
-    color: #fff;
+    color: #efefef;
 }
 
 input,
 select,
 textarea {
-    color: #fff;
+    color: #efefef;
     font-size: 16px;
 }
 
 ::-webkit-input-placeholder {
-    color: #fff;
+    color: #efefef;
 }
 
 ::-moz-placeholder {
-    color: #fff;
+    color: #efefef;
 }
 
 :-ms-input-placeholder {
-    color: #fff;
+    color: #efefef;
 }
 
 :-moz-placeholder {
-    color: #fff;
+    color: #efefef;
 }
 
 textarea#message {
-    border: 3px solid #fff;
+    border: 3px solid #efefef;
     padding: 5px;
     width: 135%;
     height: 100px;
@@ -349,25 +352,25 @@ textarea#message {
 .title-text {
     font-family: 'Gloria Hallelujah', sans-serif;
     font-size: 90px;
-    text-shadow: 2px 2px 20px #000;
+    text-shadow: 2px 2px 20px #0B0B0B;
 }
 
 .subtitle-text {
     font-family: 'Gloria Hallelujah', sans-serif;
     font-size: 60px;
-    text-shadow: 2px 2px 20px #000;
+    text-shadow: 2px 2px 20px #0B0B0B;
 }
 
 @media only screen and (max-width:824px) {
     .title-text {
         font-family: 'Gloria Hallelujah', sans-serif;
         font-size: 60px;
-        text-shadow: 2px 2px 20px #000;
+        text-shadow: 2px 2px 20px #0B0B0B;
     }
     .subtitle-text {
         font-family: 'Gloria Hallelujah', sans-serif;
         font-size: 40px;
-        text-shadow: 2px 2px 20px #000;
+        text-shadow: 2px 2px 20px #0B0B0B;
     }
 }
 
@@ -388,12 +391,12 @@ textarea#message {
     .title-text {
         font-family: 'Gloria Hallelujah', sans-serif;
         font-size: 32px;
-        text-shadow: 2px 2px 20px #000;
+        text-shadow: 2px 2px 20px #0B0B0B;
     }
     .subtitle-text {
         font-family: 'Gloria Hallelujah', sans-serif;
         font-size: 24px;
-        text-shadow: 2px 2px 20px #000;
+        text-shadow: 2px 2px 20px #0B0B0B;
     }
     .body-text {
         font-family: 'Gloria Hallelujah', sans-serif;
@@ -424,7 +427,7 @@ a.credit-link {
 	background-color: #D3404B;
     border: 2px solid #D3404B;
 	font-weight:600;
-	color: #fff;
+	color: #efefef;
 	padding: 10px; 
 	display: block;
 	text-align:center;
