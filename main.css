@@ -11,7 +11,7 @@ html, body {
 }
 
 .darker-text {
-    color: #020058;
+    color: #010042;
     padding: 20px;
     font-size:20px;
 }
@@ -22,7 +22,7 @@ html, body {
 }
 
 .container-navy{
-    background-color:#020058;
+    background-color:#010042;
     margin-top:-16px;
     padding-left: 15px;
     padding-right: 15px;
@@ -39,7 +39,7 @@ html, body {
 
 .polaroid{
     width:340px;
-    border: 14px solid white;
+    border: 12px solid white;
     margin: 20px auto;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     transform: rotate(-2deg);
@@ -51,12 +51,14 @@ html, body {
 
 .polaroid-text{
     background-color: #fff;
-    padding:20px 10px;
+    padding:10px 5px;
     display:block;
     border: 2px solid white;
     outline:1px solid white;
     text-align:center;
     font-family: 'Schoolbell', cursive;
+    color:#010042;
+    word-break: normal;
     /* font-family: 'Gochi Hand', cursive; */
 }
 
