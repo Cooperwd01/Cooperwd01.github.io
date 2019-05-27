@@ -31,7 +31,7 @@ html, body {
 
 .container-navy{
     background-color:#020058;
-    margin-top:-15px;
+    margin-top:-16px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -50,7 +50,7 @@ html, body {
     border: 14px solid white;
     margin: 20px auto;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    transform: rotate(-2deg);
+    /* transform: rotate(-2deg); */
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
