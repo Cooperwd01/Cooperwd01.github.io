@@ -1,5 +1,10 @@
 html, body {
     margin: 0px;
+    font-family: 'Questrial', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Questrial', sans-serif;
 }
 
 .title-font{
@@ -10,7 +15,7 @@ html, body {
 }
 
 .morse{
-  font-size:40px;
+  font-size:50px;
   display:block;
   margin-top:-30px;
 }
@@ -27,7 +32,6 @@ a.skip-link {
 background-color: #020058;
 background: linear-gradient(270deg, #0056b9, #159174, #020058, #f200ff);
 background-size: 600% 600%;
-
 -webkit-animation: navspace 30s ease infinite;
 -moz-animation: navspace 30s ease infinite;
 -o-animation: navspace 30s ease infinite;
@@ -83,7 +87,7 @@ animation: navspace 30s ease infinite;
   height: 2px;
   border-radius: 1px;
   margin: 4px 0 4px 0;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 
 .navbar-dark .navbar-toggler .icon-bar {
@@ -118,54 +122,50 @@ animation: navspace 30s ease infinite;
 .navbar-toggler.collapsed .icon-bar:nth-of-type(3) {
   transform: rotate(0);
 }
+
+.site-title{
+  margin: 0 10px;
+}
 /* end of Nav toggle */
 
-.bd-navbar{
-    position: sticky; /* Fixed nav position */
-    top: 0;
-    z-index: 1071;
-}
- /* Nav item styles */
+/* Nav item styles */
 @media only screen and (max-width:767px) {
-  .nav-item {
-  border-bottom:solid 1px transparent;
-  margin-bottom: 5px;
-  font-size: 1.1em;
-  transition: border-bottom 0.5s linear;
-  -webkit-transition: border-bottom 0.5s linear;
-  -moz-transition: border-bottom 0.5s linear;
-  -o-transition: border-bottom 0.5s linear;
-
+  .nav-link{
+    color: #fff !important;
+    border-bottom:solid 2px transparent;
+    margin-bottom: 5px;
+    font-size: 1.35em;
   }
-  .nav-item:hover{
-    border-bottom: solid 1px #fff;
-    color: #fff;
+
+  .nav-link:hover{
+    color: rgb(206, 206, 206); /* Fallback for older browsers */
+    color: rgba(255, 255, 255, 0.8) !important;
   }
 }
 
 @media only screen and (min-width:768px) {
-a.nav-link{
-  font-family: 'Questrial', sans-serif;
-  margin: 0px 10px;
-  /* padding:10px 10px 10px 10px; */
-  outline: none;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 1.35em;
-  border-bottom: solid 2px transparent;
-  transition: border 0.5s;
-  -webkit-transition: border 0.5s linear;
-  -moz-transition: border 0.5s linear;
-  -o-transition: border 0.5s linear;
-}
+  a.nav-link{
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+    margin: 0px 10px;
+    outline: none;
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.35em;
+    border-bottom: solid 2px transparent;
+    transition: border 0.5s;
+    -webkit-transition: border 0.5s linear;
+    -moz-transition: border 0.5s linear;
+    -o-transition: border 0.5s linear;
+  }
 
-a.nav-link:hover{
-  border-bottom: solid 2px #fff;
+  .nav-link:hover{
+    color: rgb(206, 206, 206); /* Fallback for older browsers */
+    color: rgba(255, 255, 255, 0.8) !important;
   }
 }
-/* end of Nav */
-/* end of header */
+/* end of Nav / end of header */
 
 /* Media tiles */
 .media-tile{
@@ -189,35 +189,30 @@ a.nav-link:hover{
 }
 
 @media only screen and (max-width:991px) {
-    .media-tile{
-        background-color:red;
-        text-align:center;
-        vertical-align: middle;
-        color:white;
-        transition: all 0.5s ease;
-        font-size: 26px;
-        padding: 20px;
-    }
+  .media-tile{
+    background-color:red;
+    text-align:center;
+    vertical-align: middle;
+    color:white;
+    transition: all 0.5s ease;
+    font-size: 26px;
+    padding: 20px;
+  }
 }    
+
+a.link-text{
+  color:white;
+  text-decoration:none;
+}
+
+a.link-text:hover{
+  color:yellow;
+  text-decoration:none;
+}
 /* end of tiles */
 
 .row-fluid{
     margin-top:15px;
-}
-
-a.link-text{
-    color:white;
-    text-decoration:none;
-}
-
-a.link-text:hover{
-    color:yellow;
-    text-decoration:none;
-}
-
- /* Test styles*/
-.main-style {
-
 }
 
 svg {
@@ -228,3 +223,27 @@ svg {
   width: 100%;
   margin: 0px;
 }
+
+/* underline animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+}
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* end of underline animation */

@@ -74,19 +74,19 @@
             <div class="container">
                 <div class="row">
                     <a id="credits" name="credits" class="anchor"></a>
-                    <div class="col" data-aos="fade-up">
+                    <div class="col" data-aos="fade-up" date-aos-once=”true”>
                         <h2 class="body-text date-title">Credits</h2>
-                        <h3>Television</h3>
+                        <h3>Televisin</h3>
                         <hr class="white-hr" /> </div>
                 </div>
                 <div id="television" class="credit-section">
                     <div class="row">
                         <div class="col-sm-6">
-                            <div data-aos="fade-up"> <span class="credit-title">Diddy TV (Series 3) – CBBC</span> <span class="credit-info">Additional Material, 2 Episodes</span> <span class="credit-bottom credit-info">Producer: Steve Ryde</span> </div>
-                            <div data-aos="fade-up"> <span class="credit-title">The Dog Ate My Homework (Series 2) – CBBC</span> <span class="credit-info">Writers, 10 Episodes</span> <span class="credit-bottom credit-info">Producer: Margaret-Ann Docherty</span> </div>
-                            <div data-aos="fade-up"> <span class="credit-title">Mock the Week (Series 11-13) – BBC 2</span> <span class="credit-info">Additional Material, 26 Episodes</span> <span class="credit-bottom credit-info">Producers: Angst Productions, via Chris Addison</span> </div>
-                            <div data-aos="fade-up"> <span class="credit-title">Celebrity Juice – ITV 2</span> <span class="credit-info">Additional Material, 2 Episodes</span> <span class="credit-bottom credit-info">Producers: Leon Wilson</span> </div>
-                            <div data-aos="fade-up"> <span class="credit-title">Hyper Mouse – Made in Leeds</span> <span class="credit-info">Creator (Owen), Writers, 4 Episodes</span> <span class="credit-bottom credit-info">Producers: Owen Cooper, Dave Mills</span> </div>
+                            <div data-aos="fade-up" date-aos-once=”false”> <span class="credit-title">Diddy TV (Series 3) – CBBC</span> <span class="credit-info">Additional Material, 2 Episodes</span> <span class="credit-bottom credit-info">Producer: Steve Ryde</span> </div>
+                            <div data-aos="fade-up" date-aos-once=”false”> <span class="credit-title">The Dog Ate My Homework (Series 2) – CBBC</span> <span class="credit-info">Writers, 10 Episodes</span> <span class="credit-bottom credit-info">Producer: Margaret-Ann Docherty</span> </div>
+                            <div data-aos="fade-up" date-aos-once=”true”> <span class="credit-title">Mock the Week (Series 11-13) – BBC 2</span> <span class="credit-info">Additional Material, 26 Episodes</span> <span class="credit-bottom credit-info">Producers: Angst Productions, via Chris Addison</span> </div>
+                            <div data-aos="fade-up" date-aos-once=”true”> <span class="credit-title">Celebrity Juice – ITV 2</span> <span class="credit-info">Additional Material, 2 Episodes</span> <span class="credit-bottom credit-info">Producers: Leon Wilson</span> </div>
+                            <div data-aos="fade-up" date-aos-once=”true”> <span class="credit-title">Hyper Mouse – Made in Leeds</span> <span class="credit-info">Creator (Owen), Writers, 4 Episodes</span> <span class="credit-bottom credit-info">Producers: Owen Cooper, Dave Mills</span> </div>
                         </div>
                         <div class="col-sm-6">
                             <div data-aos="fade-up"> <span class="credit-title">Breaking the News (Series 1) – BBC 2 Scotland</span> <span class="credit-info">Additional Material, 1 Episode</span> <span class="credit-bottom credit-info">Producers: Lauren Mackay, David Flynn</span> </div>
@@ -215,7 +215,28 @@
     </footer>
     <script src="app-js.js"></script>
     <script>
-        AOS.init();
+        // AOS.init();
+        AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
     </script>
 </body>
 
