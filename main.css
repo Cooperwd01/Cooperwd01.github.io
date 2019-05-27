@@ -2,6 +2,7 @@ html, body {
     margin: 0px;
     font-family: 'Questrial', sans-serif;
     font-size:18px;
+    color:#010042;
 }
 
 .light-text {
@@ -86,3 +87,51 @@ html, body {
         height:230px;
     }
 }
+
+/* Credit style */
+.tv-credit{
+    display:block;
+    margin-bottom: 20px;
+    /* border-left: 10px solid #0056b9; */
+    padding-left:10px;
+}
+
+/* .tv-credit:nth-child(2){
+    border-left: 10px solid #159174;
+}
+
+.tv-credit:nth-child(3){
+    border-left: 10px solid #020058;
+}
+
+.tv-credit:nth-child(4){
+    border-left: 10px solid #f200ff;
+} */
+
+.credit-title {
+  font-size:20px;
+  display:block;
+  font-weight: 800;
+  word-break: normal;
+}
+
+.credit-info {
+    display:block;
+    word-break: normal;
+
+}
+
+.credit-producer{
+    word-break: normal;
+    display:none;
+}
+
+.credit-channel{
+    display:block;
+}
+
+/* 
+
+#0056b9, #159174, #020058, #f200ff
+
+*/
