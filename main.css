@@ -16,14 +16,6 @@ html, body {
     font-size:20px;
 }
 
-@media only screen and (max-width:767px) {
-    .light-text {
-        font-size: 18px;
-    }
-    .darker-text {
-        font-size: 18px;
-    }
-}
 .img-col{
     background: url(images/site-1-small.jpg) no-repeat;
     background-size: cover;
@@ -76,4 +68,19 @@ html, body {
 
 .main-style{
     background-color:#fff;
+}
+
+@media only screen and (max-width:767px) {
+    .light-text {
+        font-size: 18px;
+    }
+    .darker-text {
+        font-size: 18px;
+    }
+    .polaroid{
+        width:300px;
+    }
+    .polaroid-img{
+        height:230px;
+    }
 }
