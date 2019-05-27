@@ -2,12 +2,27 @@ html, body {
     margin: 0px;
     font-family: 'Questrial', sans-serif;
     font-size:18px;
-    background-color:#020058;
 }
 
 .light-text {
     color: white;
     padding: 20px;
+    font-size:20px;
+}
+
+.darker-text {
+    color: #020058;
+    padding: 20px;
+    font-size:20px;
+}
+
+@media only screen and (max-width:767px) {
+    .light-text {
+        font-size: 18px;
+    }
+    .darker-text {
+        font-size: 18px;
+    }
 }
 .img-col{
     background: url(images/site-1-small.jpg) no-repeat;
@@ -17,6 +32,13 @@ html, body {
 .container-navy{
     background-color:#020058;
     margin-top:-15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-white{
+    background-color:#fff;
+    margin-top:-15px;
 }
 
 .icon-heading{
@@ -25,7 +47,7 @@ html, body {
 
 .polaroid{
     width:350px;
-    border: 10px solid white;
+    border: 14px solid white;
     margin: 20px auto;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     transform: rotate(-2deg);
@@ -46,6 +68,11 @@ html, body {
 }
 
 .polaroid-img{
-    width: 100%;
-    object-fit: fill;
+    object-fit: cover;
+    width:100%;
+    height:260px;
+}
+
+.main-style{
+    background-color:#fff;
 }
