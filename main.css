@@ -96,6 +96,27 @@ html, body {
     padding-left:10px;
 }
 
+.radio-credit{
+    display:block;
+    margin-bottom: 20px;
+    /* border-left: 10px solid #0056b9; */
+    padding-left:10px;
+}
+
+.online-credit{
+    display:block;
+    margin-bottom: 20px;
+    /* border-left: 10px solid #0056b9; */
+    padding-left:10px;
+}
+
+.theatre-credit{
+    display:block;
+    margin-bottom: 20px;
+    /* border-left: 10px solid #0056b9; */
+    padding-left:10px;
+}
+
 /* .tv-credit:nth-child(2){
     border-left: 10px solid #159174;
 }
@@ -118,7 +139,6 @@ html, body {
 .credit-info {
     display:block;
     word-break: normal;
-
 }
 
 .credit-producer{
@@ -128,6 +148,11 @@ html, body {
 
 .credit-channel{
     display:block;
+}
+
+.credit-section-title {
+    margin-top: 30px;
+    margin-bottom: -18px;
 }
 
 /* 
