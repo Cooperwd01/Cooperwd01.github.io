@@ -6,7 +6,8 @@
 
 .footer-style{
     background-color:#010042; 
-    border-top:5px solid #159174;
+    border-top:5px solid #f200ff;
+    margin-top:50px;
 }
 
 .ftr-link{
@@ -59,3 +60,27 @@
  ul > li > a > i {
      margin-right:10px;
  }
+
+ /* underline animation */
+.ftr-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #f200ff;
+  }
+  .ftr-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f200ff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .ftr-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  /* end of underline animation */

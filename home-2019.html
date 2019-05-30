@@ -38,9 +38,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <!--<li class="nav-item active">
-                            <a class="hover-underline-animation nav-link" href="#">Home</a>
-                        </li>-->
                         <li class="nav-item">
                             <a class="hover-underline-animation nav-link" href="#about-us">About us</a>
                         </li>
@@ -143,7 +140,7 @@
                             <div class="radio-credit" data-aos="fade-up"><span class="credit-title">The Comedy Cafe</span><span class="credit-channel">BBC Radio Scotland</span><span class="credit-info">Additional Material, 1 Episode</span><span class="credit-producer">Producer: Margaret-Ann Docherty</span></div>
                         </div> 
                         <div class="col-md">
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">Breaking the News (Series 9)</span><span class="credit-channel">BBC Radio Scotland</span><span class="credit-info">Writers, 1 Episode</span><span class="credit-producer">Producer: Lauren Mackay</span></div>
+                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">Breaking the News (Series 9)</span><span class="credit-channel">BBC Radio Scotland</span><span class="credit-info">Writers, 3 Episode</span><span class="credit-producer">Producer: Lauren Mackay</span></div>
                             <div class="radio-credit" data-aos="fade-up"><span class="credit-title">The Show What You Wrote (Series 2)</span><span class="credit-channel">BBC Radio 4</span><span class="credit-info">Writers, 2 Episodes</span><span class="credit-producer">Producer: Carl Cooper</span></div>
                             <div class="radio-credit" data-aos="fade-up"><span class="credit-title">The Guessing Game (Series 2)</span><span class="credit-channel">BBC Radio Scotland</span><span class="credit-info">Writers, 6 Episodes</span><span class="credit-producer">Producer: Margaret-Ann Docherty</span></div>
                             <div class="radio-credit" data-aos="fade-up"><span class="credit-title">Jesting About</span><span class="credit-channel">BBC Radio Newcastle</span><span class="credit-info">Writers, 1 Episode</span><span class="credit-producer">Producers: Helen Spencer, Steve Drayton, Carl Cooper</span></div>
@@ -167,6 +164,10 @@
                             <div class="online-credit" data-aos="fade-up"><span class="credit-title">Friday Football Special</span><span class="credit-channel">Microsoft, MSN Sport</span><span class="credit-info">Writers, 1 Episode</span><span class="credit-producer">Producer: Nick Astor</span></div>
                         </div> 
                         <div class="col-md">
+                            <!-- <div class="polaroid-sml" data-aos="fade-up">
+                                    <img class="polaroid-img-sml" src="images/home3-500.jpg" alt="Owen Cooper performing stand up comedy"></img>
+                                    <span class="polaroid-text-sml">Will & Owen Cooper being self-conscious about their hands</span>
+                            </div> -->
                         </div>      
                     </div>
                 </section>
@@ -184,12 +185,56 @@
                             <div class="theatre-credit" data-aos="fade-up"><span class="credit-title">Take the Wheel, The Twilight Hour</span><span class="credit-channel">Canal Cafe Theatre & Etcetera Theatre</span><span class="credit-info">Writer (Will)</span><span class="credit-producer">Producers: William Ribó, Madeleine Meurman</span></div>
                         </div> 
                         <div class="col-md">
+                            <!-- <div class="polaroid-sml" data-aos="fade-up">
+                                <img class="polaroid-img-sml" src="images/home2-500.jpg" alt="Owen Cooper performing stand up comedy"></img>
+                                <span class="polaroid-text-sml">Some guy loving his life while acting out our script</span>
+                            </div> -->
                         </div>      
                     </div>
                 </section>
             </div>
             <!-- /. -->
 
+            <!-- Contact form -->           
+            <div class="container-fluid form-color" data-aos="fade-up">
+                <div class="row row-fluid">
+                    <a id="contact" name="contact" class="anchor"></a>
+                    <div class="col" data-aos="fade-up">
+                        <h2 class="contact-title text-center">Contact</h2>
+                    </div>
+                </div> 
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <form action="https://formspree.io/cooperbrotherswrite@gmail.com" method="POST">
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label class="form-label" for="first-name">First name</label>
+                                        <input id="first-name" name="first-name" class="form-control contact-input" required type="text">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="form-label" for="last-name">Last name</label>
+                                        <input id="last-name" name="last-name" class="form-control contact-input" required type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label class="form-label" for="email">Email</label>
+                                        <input id="email" class="form-control contact-input" required type="email" name="_replyto" placeholder="For example, email@example.com">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="form-label" for="message">Message</label>
+                                        <textarea id="message" rows="3" class="form-control contact-input" required name="text" placeholder="My megaphone broke, but you don't hear me complaining about it"></textarea>
+                                    </div>
+                                </div>
+                                <button class="btn-color btn btn-primary px-4 float-right" type="submit" value="Send"><i class="far fa-paper-plane"></i> Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </div>       
+            
+            <!-- FAKE FORM -->
             
         </main>
         <!-- Footer -->
@@ -199,9 +244,9 @@
                     <div class="col">
                         <h3 class="footer-title">Will & Owen Cooper - Writers</h3>
                         <ul class="list-unstyled">
-                            <li><a class="hover-underline-animation ftr-link" href="#about-us"><i class="fas fa-theater-masks"></i>About Us</a></li>
-                            <li><a class="hover-underline-animation ftr-link" href="#credits"><i class="fas fa-scroll"></i>Credits</a></li>
-                            <li><a class="hover-underline-animation ftr-link" href="#contact"><i class="far fa-paper-plane"></i>Contact</a></li>
+                            <li><a class="ftr-underline-animation ftr-link" href="#about-us"><i class="fas fa-theater-masks"></i>About Us</a></li>
+                            <li><a class="ftr-underline-animation ftr-link" href="#credits"><i class="fas fa-scroll"></i>Credits</a></li>
+                            <li><a class="ftr-underline-animation ftr-link" href="#contact"><i class="far fa-paper-plane"></i>Contact</a></li>
                         </ul>
                     </div>
                 </div>

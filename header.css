@@ -129,13 +129,21 @@ animation: navspace 30s ease infinite;
 /* end of Nav toggle */
 
 /* Nav item styles */
+
+.nav-link {
+  color: #fff !important;
+  border-bottom:solid 2px transparent;
+}
+
+.nav-link:focus{
+  outline: 2px solid white;
+}
+
 @media only screen and (max-width:767px) {
   .nav-item {
     text-align: center;
   }
   .nav-link{
-    color: #fff !important;
-    border-bottom:solid 2px transparent;
     margin-bottom: 5px;
     font-size: 1.35em;
   }
@@ -152,11 +160,9 @@ animation: navspace 30s ease infinite;
     text-align: center;
     margin: 0px 10px;
     outline: none;
-    color: #fff !important;
     text-decoration: none;
     font-weight: 400;
     font-size: 1.35em;
-    border-bottom: solid 2px transparent;
     transition: border 0.5s;
     -webkit-transition: border 0.5s linear;
     -moz-transition: border 0.5s linear;
@@ -169,58 +175,6 @@ animation: navspace 30s ease infinite;
   }
 }
 /* end of Nav / end of header */
-
-/* Media tiles */
-.media-tile{
-    background-color: navy;
-    text-align:center;
-    vertical-align: middle;
-    color:white;
-    transition: all 0.5s ease;
-    font-size: 26px;
-    padding: 50px;
-    position: relative;
-}
-
-.media-tile:hover{
-    background-color:blueviolet;
-    text-align:center;
-    color:yellow;
-    transform: scale(1.02);
-    z-index: 1;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-@media only screen and (max-width:991px) {
-  .media-tile{
-    background-color:red;
-    text-align:center;
-    vertical-align: middle;
-    color:white;
-    transition: all 0.5s ease;
-    font-size: 26px;
-    padding: 20px;
-  }
-}    
-
-a:focus {
-  outline: 2px solid white;
-}
-
-a:active {
-  outline: 2px solid white;
-}
-
-a.link-text{
-  color:white;
-  text-decoration:none;
-}
-
-a.link-text:hover{
-  color:yellow;
-  text-decoration:none;
-}
-/* end of tiles */
 
 .row-fluid{
     margin-top:15px;
