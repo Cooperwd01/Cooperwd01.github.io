@@ -224,15 +224,19 @@ html, body {
     outline: 3px solid #010042;
 }
 
+input[type=text], input[type=email], textarea{
+    color:#010042 !important;
+}
+
 .btn-color {
-    background-color:#0056b9; 
+    background-color:#010042; 
 }
 button > i{
     margin-right: 10px;
 }
 
 .btn-color:focus{
-    outline: 3px solid #010042;
+    outline: 3px solid #f200ff;
 }
 /* 
 
