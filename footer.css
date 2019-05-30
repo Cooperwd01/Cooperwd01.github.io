@@ -1,5 +1,5 @@
 .footer-title{
-    font-size: 20px;
+    font-size: 24px;
     font-weight:800;
     color: rgb(242, 0, 255);
 }
@@ -9,41 +9,41 @@
     border-top:5px solid #159174;
 }
 
+.ftr-link{
+    color: rgb(242, 0, 255) !important;
+    border-bottom:solid 2px transparent;
+    font-size: 20px;
+    font-family: 'Questrial', sans-serif;
+    padding: 2px;
+}
+
 .ftr-link:hover{
     text-decoration: none;
+    color: rgb(242, 0, 255, 0.8) !important;
+}
+
+.ftr-link:focus {
+    outline: 2px solid rgb(242, 0, 255);
 }
 
 @media only screen and (max-width:767px) {
     .ftr-link{
-      color:  #f200ff !important;
-      border-bottom:solid 2px transparent;
       margin-bottom: 5px;
-      font-size: 1em;
-    }
-  
-    .ftr-link:hover{
-      color: rgb(242, 0, 255, 0.8) !important;
     }
   }
   
   @media only screen and (min-width:768px) {
     a.ftr-link{
-      font-family: 'Questrial', sans-serif;
       text-align: center;
       outline: none;
       color: rgb(242, 0, 255) !important;
       text-decoration: none;
       font-weight: 600;
-      font-size: 1em;
-      border-bottom: solid 2px transparent;
+      line-height:30px;
       transition: border 0.5s;
       -webkit-transition: border 0.5s linear;
       -moz-transition: border 0.5s linear;
       -o-transition: border 0.5s linear;
-    }
-  
-    .ftr-link:hover{
-      color: rgb(242, 0, 255, 0.8) !important;
     }
     .row-ftr {
         margin-left: -5px;
@@ -53,6 +53,9 @@
   .footer-copyright{
       color:#159174;
       font-weight:800;
+      font-size:18px;
   }
 
- 
+ ul > li > a > i {
+     margin-right:10px;
+ }
