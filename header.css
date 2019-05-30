@@ -203,6 +203,14 @@ animation: navspace 30s ease infinite;
   }
 }    
 
+a:focus {
+  outline: 2px solid white;
+}
+
+a:active {
+  outline: 2px solid white;
+}
+
 a.link-text{
   color:white;
   text-decoration:none;

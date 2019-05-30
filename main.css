@@ -3,6 +3,7 @@ html, body {
     font-family: 'Questrial', sans-serif;
     font-size:18px;
     color:#010042;
+    scroll-behavior: smooth;
 }
 
 .light-text {
@@ -85,6 +86,12 @@ html, body {
     }
     .polaroid-img{
         height:230px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+.credit-section-title {
+    margin-left:5px;
     }
 }
 
