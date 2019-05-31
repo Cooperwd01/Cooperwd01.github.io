@@ -52,7 +52,7 @@
   }
 
   .footer-copyright{
-      color:#159174;
+      color:#16BB95;
       font-weight:800;
       font-size:18px;
   }
@@ -84,3 +84,11 @@
     transform-origin: bottom left;
   }
   /* end of underline animation */
+
+  .ftr-nav-link {
+    margin-bottom:10px;
+  }
+
+  .ftr-nav-link:nth-last-child() {
+    margin-bottom:0px;
+  }

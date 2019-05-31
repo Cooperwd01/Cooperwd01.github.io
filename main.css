@@ -10,7 +10,13 @@ html, body {
 	html {
 		scroll-behavior: auto;
 	}
-} 
+}
+
+.icon-gradient:before {
+    background: -webkit-gradient(linear, left bottom, right top, from(#b8079a), to(#010042));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .light-text {
     color: white;
@@ -22,11 +28,6 @@ html, body {
     color: #010042;
     padding: 20px;
     font-size:20px;
-}
-
-.img-col{
-    background: url(images/site-1-small.jpg) no-repeat;
-    background-size: cover;
 }
 
 .container-navy{
@@ -102,7 +103,6 @@ html, body {
     font-family: 'Schoolbell', cursive;
     color:#010042;
     word-break: normal;
-    /* font-family: 'Gochi Hand', cursive; */
 }
 
 .polaroid-img-sml{
@@ -205,13 +205,25 @@ html, body {
 }
 
 .credit-align{
-    margin-top: 0;
+    color: #010042;
+    padding-bottom: 20px;
+    font-size:20px;
+}
+
+.credit-align-title{
+    margin-bottom:0px;
+    margin-left:10px;
+}
+
+.online-credit.aos-init.aos-animate {
+    margin-bottom: 45px !important;
 }
 
 /* form style */
 .form-color{
-    background-color: #159174;
-    color:white;
+    background-color: #16BB95;
+    color:#010042;
+    font-weight:800;
     margin-bottom:-55px;
     margin-top:20px;
     padding-bottom:20px;
@@ -227,13 +239,9 @@ html, body {
     font-size: 20px;
 }
 
-.form-group:focus-within {
-    color: #010042; 
-}
-
-input:focus + .form-label {
-    color: #010042;
-}
+/* .form-group:focus-within {
+    color: red;
+}  */
 
 .contact-input:focus{
     outline: 3px solid #010042;
@@ -264,6 +272,6 @@ button > i{
 }
 /* 
 
-#0056b9, #159174 (teal), #010042 (navy), #f200ff (hot pink), #F47983 (mute pink)
+#0056b9, #16BB95 (light teal), #159174 (dark teal), #010042 (navy), #f200ff (hot pink), #F47983 (mute pink)
 
 */
