@@ -204,6 +204,10 @@ html, body {
     margin-bottom: -18px;
 }
 
+.credit-align{
+    margin-top: 0;
+}
+
 /* form style */
 .form-color{
     background-color: #159174;
