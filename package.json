@@ -2,7 +2,7 @@
   "name": "cooperwd01.github.io",
   "version": "1.0.0",
   "description": "A personal site for Will and Owen Cooper",
-  "main": "app-js.js",
+  "main": "index.html",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
