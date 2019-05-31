@@ -227,6 +227,14 @@ html, body {
     font-size: 20px;
 }
 
+.form-group:focus-within {
+    color: #010042; 
+}
+
+input:focus + .form-label {
+    color: #010042;
+}
+
 .contact-input:focus{
     outline: 3px solid #010042;
 }
