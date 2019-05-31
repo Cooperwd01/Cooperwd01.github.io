@@ -26,18 +26,23 @@
         <header class="header-color">
             <!-- Skip to main content-->
             <a class="skip-link sr-only sr-only-focusable" href="#content">Skip to main content</a>
-            <nav class="navbar nav-color navbar-expand-md navbar-dark bd-navbar" data-aos="fade-up" data-aos-duration="1000"> 
-                <span class="nav-title navbar-brand">
-                    <i class="fas fa-pen-nib"></i>
-                    <span class="site-title">Will &amp; Owen Cooper</span>
-                </span>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+            <nav class="navbar nav-color navbar-expand-md navbar-dark bd-navbar" data-aos="fade-up" data-aos-duration="1000">
+                <div class="d-flex flex-grow-1">
+                    <span class="nav-title navbar-brand">
+                        <i class="fas fa-pen-nib"></i>
+                        <span class="site-title">Will &amp; Owen Cooper</span>
+                    </span>
+                    
+                    <div class="w-100 text-right">
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNav">
+                    <ul class="navbar-nav ml-auto flex-nowrap">
                         <li class="nav-item">
                             <a class="hover-underline-animation nav-link" href="#about-us">About us</a>
                         </li>
@@ -50,6 +55,8 @@
                     </ul>
                 </div>
             </nav>
+            <!-- /.-->
+            
             <h1 class="text-center title-font" data-aos="fade-up" data-aos-duration="1000"> 
                 Writers
                 <span class="morse" aria-hidden="true" role="presentation" data-aos="fade-up" data-aos-duration="1000">.... . .-.. .-.. ---</span>
@@ -164,10 +171,7 @@
                             <div class="online-credit" data-aos="fade-up"><span class="credit-title">Friday Football Special</span><span class="credit-channel">Microsoft, MSN Sport</span><span class="credit-info">Writers, 1 Episode</span><span class="credit-producer">Producer: Nick Astor</span></div>
                         </div> 
                         <div class="col-md">
-                            <!-- <div class="polaroid-sml" data-aos="fade-up">
-                                    <img class="polaroid-img-sml" src="images/home3-500.jpg" alt="Owen Cooper performing stand up comedy"></img>
-                                    <span class="polaroid-text-sml">Will & Owen Cooper being self-conscious about their hands</span>
-                            </div> -->
+                        
                         </div>      
                     </div>
                 </section>
@@ -207,25 +211,34 @@
                     <div class="row">
                         <div class="col-md-10 mx-auto">
                             <form action="https://formspree.io/cooperbrotherswrite@gmail.com" method="POST">
-                                <div class="form-group row">
+                                <div class="row">
                                     <div class="col-sm-6">
-                                        <label class="form-label" for="first-name">First name</label>
-                                        <input id="first-name" name="first-name" class="form-control contact-input" required type="text">
+                                        <div class="form-group">
+                                            <label class="form-label" for="first-name">First name</label>
+                                            <input id="first-name" name="first-name" class="form-control contact-input" required type="text">
+                                        </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <label class="form-label" for="last-name">Last name</label>
-                                        <input id="last-name" name="last-name" class="form-control contact-input" required type="text">
-                                    </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="last-name">Last name</label>
+                                            <input id="last-name" name="last-name" class="form-control contact-input" required type="text">
+                                        
+                                        </div>
+                                    </div>    
                                 </div>
-                                <div class="form-group row">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-sm-6">
+                                            <label class="form-label" for="email">Email</label>
+                                            <input id="email" class="form-control contact-input" required type="email" name="_replyto" placeholder="For example, email@example.com">
+                                        </div>
+                                    </div>    
                                     <div class="col-sm-6">
-                                        <label class="form-label" for="email">Email</label>
-                                        <input id="email" class="form-control contact-input" required type="email" name="_replyto" placeholder="For example, email@example.com">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label class="form-label" for="message">Message</label>
-                                        <textarea id="message" rows="3" class="form-control contact-input" required name="text" placeholder="My megaphone broke, but you don't hear me complaining about it"></textarea>
-                                    </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="message">Message</label>
+                                            <textarea id="message" rows="3" class="form-control contact-input" required name="text" placeholder="My megaphone broke, but you don't hear me complaining about it"></textarea>
+                                        </div>
+                                    </div>    
                                 </div>
                                 <button class="btn-color btn btn-primary px-4 float-right" type="submit" value="Send"><i class="far fa-paper-plane"></i> Send</button>
                             </form>

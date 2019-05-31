@@ -1,17 +1,17 @@
 .footer-title{
     font-size: 24px;
     font-weight:800;
-    color: rgb(242, 0, 255);
+    color:#fff;
 }
 
 .footer-style{
     background-color:#010042; 
-    border-top:5px solid #f200ff;
+    /* border-top:5px solid #F47983; */
     margin-top:50px;
 }
 
 .ftr-link{
-    color: rgb(242, 0, 255) !important;
+    color: #fff;
     border-bottom:solid 2px transparent;
     font-size: 20px;
     font-family: 'Questrial', sans-serif;
@@ -20,11 +20,11 @@
 
 .ftr-link:hover{
     text-decoration: none;
-    color: rgb(242, 0, 255, 0.8) !important;
+    color: rgb(255, 255, 255, 0.8) !important;
 }
 
 .ftr-link:focus {
-    outline: 2px solid rgb(242, 0, 255);
+    outline: 2px solid #fff;
 }
 
 @media only screen and (max-width:767px) {
@@ -37,7 +37,7 @@
     a.ftr-link{
       text-align: center;
       outline: none;
-      color: rgb(242, 0, 255) !important;
+      color: #fff;
       text-decoration: none;
       font-weight: 600;
       line-height:30px;
@@ -65,7 +65,7 @@
 .ftr-underline-animation {
     display: inline-block;
     position: relative;
-    color: #f200ff;
+    color: #fff;
   }
   .ftr-underline-animation::after {
     content: '';
@@ -75,7 +75,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #f200ff;
+    background-color: #ffffff;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
