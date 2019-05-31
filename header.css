@@ -129,7 +129,9 @@ animation: navspace 30s ease infinite;
 /* end of Nav toggle */
 
 /* Nav item styles */
-
+button.navbar-toggler {
+  margin-top: 8px !important;
+}
 .nav-link {
   color: #fff !important;
   border-bottom:solid 2px transparent;
