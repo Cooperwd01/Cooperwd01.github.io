@@ -282,9 +282,10 @@ a.media-link {
     -moz-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #010042;
+    /* border-bottom: 2px solid;
     border-image-source: linear-gradient(100deg, #0056b9, #CB00D6, #010042);
-    border-image-slice: 1;
+    border-image-slice: 1; */
   }
 
   a.media-link:hover {
@@ -294,17 +295,19 @@ a.media-link {
     -moz-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #010042;
+    /* border-bottom: 2px solid;
     border-image-source: linear-gradient(100deg, #0053B3, #0053B3, #0053B3);
-    border-image-slice: 1;
+    border-image-slice: 1; */
   }
 
   a.media-link:focus {
     color:#0053B3;
     outline: 2px solid #0053B3;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid transparent;
+    /* border-bottom: 2px solid;
     border-image-source: linear-gradient(100deg, transparent, transparent, transparent);
-    border-image-slice: 1;
+    border-image-slice: 1; */
   }
 
 .brag-box {
@@ -314,7 +317,7 @@ a.media-link {
     margin: 10px 0px;
     display: inline-block;
     font-weight: 800;
-    border: 2px solid #010042;
+    /* border: 2px solid #010042; */
 }
 
 span.brag-box > i {
@@ -332,3 +335,11 @@ span.morse-sub {
 #0056b9, #16BB95 (light teal), #159174 (dark teal), #010042 (navy), #f200ff (hot pink), #F47983 (mute pink)
 
 */
+/*
+      Define here the CSS styles applied only to Safari browsers
+      (any version and any device)
+     */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ @media {
+    
+}}
