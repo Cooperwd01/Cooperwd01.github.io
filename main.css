@@ -14,8 +14,11 @@ html, body {
 
 .icon-gradient:before {
     background: -webkit-gradient(linear, left bottom, right top, from(#b8079a), to(#010042));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 .light-text {
@@ -275,6 +278,8 @@ button > i{
 a.media-link {
     color: #010042;
     background: -webkit-linear-gradient(360deg, #0056b9, #CB00D6, #010042);
+    background-clip: text;
+    -moz-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-bottom: 2px solid;
@@ -285,6 +290,8 @@ a.media-link {
   a.media-link:hover {
     color:#0053B3;
     background: -webkit-linear-gradient(#0053B3, #0053B3, #0053B3);
+    background-clip: text;
+    -moz-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-bottom: 2px solid;
@@ -298,7 +305,7 @@ a.media-link {
     border-bottom: 2px solid;
     border-image-source: linear-gradient(100deg, transparent, transparent, transparent);
     border-image-slice: 1;
-
+  }
 /* 
 
 #0056b9, #16BB95 (light teal), #159174 (dark teal), #010042 (navy), #f200ff (hot pink), #F47983 (mute pink)
