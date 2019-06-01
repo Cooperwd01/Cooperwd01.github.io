@@ -211,14 +211,15 @@ html, body {
 }
 
 .credit-align-title{
-    margin-bottom:0px;
+    margin-top:35px;
     margin-left:10px;
+    margin-bottom:-5px;
 }
-
-.online-credit.aos-init.aos-animate {
-    margin-bottom: 45px !important;
+@media only screen and (max-width:678px) {
+    .theatre-align{
+    margin-top:50px;
+    }
 }
-
 /* form style */
 .form-color{
     background-color: #16BB95;
@@ -270,6 +271,34 @@ button > i{
 .btn-color:focus{
     outline: 3px solid white;
 }
+
+a.media-link {
+    color: #010042;
+    background: -webkit-linear-gradient(360deg, #0056b9, #CB00D6, #010042);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(100deg, #0056b9, #CB00D6, #010042);
+    border-image-slice: 1;
+  }
+
+  a.media-link:hover {
+    color:#0053B3;
+    background: -webkit-linear-gradient(#0053B3, #0053B3, #0053B3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(100deg, #0053B3, #0053B3, #0053B3);
+    border-image-slice: 1;
+  }
+
+  a.media-link:focus {
+    color:#0053B3;
+    outline: 2px solid #0053B3;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(100deg, transparent, transparent, transparent);
+    border-image-slice: 1;
+
 /* 
 
 #0056b9, #16BB95 (light teal), #159174 (dark teal), #010042 (navy), #f200ff (hot pink), #F47983 (mute pink)
