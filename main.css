@@ -222,6 +222,10 @@ html, body {
     .theatre-align{
     margin-top:50px;
     }
+
+    h3 > i {
+        margin-left:5px;
+    }
 }
 /* form style */
 .form-color{

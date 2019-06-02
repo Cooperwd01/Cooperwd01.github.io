@@ -30,7 +30,7 @@ a.skip-link {
 /* header styles */
 .header-color {
 background-color: #020058;
-background: linear-gradient(270deg, #0056b9, #159174, #020058, #f200ff);
+background: #020058 linear-gradient(270deg, #0056b9, #159174, #020058, #f200ff);
 background-size: 600% 600%;
 -webkit-animation: navspace 30s ease infinite;
 -moz-animation: navspace 30s ease infinite;
