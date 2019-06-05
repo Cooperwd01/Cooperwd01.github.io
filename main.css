@@ -131,12 +131,14 @@ html, body {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
+    width:100%;
+    margin-top:-2px;
 }
 
 .polaroid-slider {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) !important;
     margin: 10px 20px;
-    width: 360px;
+    width: 100%;
     transform: rotate(-2deg);
     /* border: 2px solid white !important;
     outline:1px solid white !important; */
@@ -146,11 +148,8 @@ html, body {
     -o-backface-visibility: hidden;
 }
 
-/* .polaroid-carousel{
-    
-}
 
-*/
+
 .carousel-img{
     height:auto;
     border: 16px solid white;
