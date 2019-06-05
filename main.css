@@ -376,6 +376,11 @@ span.morse-sub {
     text-align: center;
     font-size: 40px;
 }
+
+button.navbar-toggler.collapsed:focus {
+    outline: 2px solid white;
+}
+
 /* 
 
 #0056b9, #16BB95 (light teal), #159174 (dark teal), #010042 (navy), #f200ff (hot pink), #F47983 (mute pink)
