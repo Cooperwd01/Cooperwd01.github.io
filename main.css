@@ -303,7 +303,7 @@ button > i{
     outline: 3px solid white;
 }
 
-a.media-link {
+/* a.media-link {
     color: #010042;
     background: -webkit-linear-gradient(360deg, #0056b9, #CB00D6, #010042);
     background-clip: text;
@@ -311,16 +311,21 @@ a.media-link {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-bottom: 2px solid #010042;
-  }
+  } */
 
-  a.media-link:hover {
+  a.media-link {
     color:#0053B3;
-    background: -webkit-linear-gradient(#0053B3, #0053B3, #0053B3);
+    text-decoration: underline;
+     /* background: -webkit-linear-gradient(#0053B3, #0053B3, #0053B3);
     background-clip: text;
     -moz-background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-bottom: 2px solid #0053B3;
+    -webkit-text-fill-color: transparent; 
+    border-bottom: 2px solid #0053B3; */
+  }
+
+  a.media-link:hover{
+    color:rgb(0, 83, 179, 0.8); 
   }
 
   a.media-link:focus {
