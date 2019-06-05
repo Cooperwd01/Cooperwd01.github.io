@@ -141,8 +141,6 @@ html, body {
     margin: 10px 20px;
     width: 100%;
     transform: rotate(-2deg);
-    /* border: 2px solid white !important;
-    outline:1px solid white !important; */
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -186,42 +184,26 @@ html, body {
 .tv-credit{
     display:block;
     margin-bottom: 35px;
-    /* border-left: 10px solid #0056b9; */
     padding-left:10px;
 }
 
 .radio-credit{
     display:block;
     margin-bottom: 35px;
-    /* border-left: 10px solid #0056b9; */
     padding-left:10px;
 }
 
 .online-credit{
     display:block;
     margin-bottom: 35px;
-    /* border-left: 10px solid #0056b9; */
     padding-left:10px;
 }
 
 .theatre-credit{
     display:block;
     margin-bottom: 35px;
-    /* border-left: 10px solid #0056b9; */
     padding-left:10px;
 }
-
-/* .tv-credit:nth-child(2){
-    border-left: 10px solid #159174;
-}
-
-.tv-credit:nth-child(3){
-    border-left: 10px solid #020058;
-}
-
-.tv-credit:nth-child(4){
-    border-left: 10px solid #f200ff;
-} */
 
 .credit-title {
   font-size:20px;
@@ -329,9 +311,6 @@ a.media-link {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-bottom: 2px solid #010042;
-    /* border-bottom: 2px solid;
-    border-image-source: linear-gradient(100deg, #0056b9, #CB00D6, #010042);
-    border-image-slice: 1; */
   }
 
   a.media-link:hover {
@@ -342,18 +321,12 @@ a.media-link {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-bottom: 2px solid #0053B3;
-    /* border-bottom: 2px solid;
-    border-image-source: linear-gradient(100deg, #0053B3, #0053B3, #0053B3);
-    border-image-slice: 1; */
   }
 
   a.media-link:focus {
     color:#0053B3;
     outline: 2px solid #0053B3;
     border-bottom: 2px solid transparent;
-    /* border-bottom: 2px solid;
-    border-image-source: linear-gradient(100deg, transparent, transparent, transparent);
-    border-image-slice: 1; */
   }
 
 .brag-box {
@@ -363,7 +336,6 @@ a.media-link {
     margin: 10px 0px;
     display: inline-block;
     font-weight: 800;
-    /* border: 2px solid #010042; */
 }
 
 span.brag-box > i {
