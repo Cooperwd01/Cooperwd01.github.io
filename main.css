@@ -124,7 +124,7 @@ html, body {
     font-family: 'Schoolbell', cursive;
     color: #010042;
     word-break: normal;
-    min-height: 120px;
+    min-height: 160px;
     border: 5px solid white !important;
     outline:1px solid white !important;
     backface-visibility: hidden;
@@ -151,6 +151,19 @@ html, body {
     height:auto;
     border: 16px solid white;
 } 
+
+ 
+/* @media only screen and (min-width:992px) {
+    .p-jk {
+    font-size:24px;
+    margin-top: 1rem;
+    }
+    .polaroid-text {
+        min-height: 140px;
+    }
+} */
+
+
 /* /. */
 
 
