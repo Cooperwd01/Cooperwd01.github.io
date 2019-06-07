@@ -152,16 +152,19 @@ html, body {
     border: 16px solid white;
 } 
 
- 
-/* @media only screen and (min-width:992px) {
-    .p-jk {
-    font-size:24px;
-    margin-top: 1rem;
-    }
+@media only screen and (max-width:767px) {
     .polaroid-text {
-        min-height: 140px;
+        font-size: 28px;
     }
-} */
+}
+
+ 
+@media only screen and (min-width:992px) {
+    .polaroid-text {
+        min-height: 130px;
+        padding-top:20px;
+    }
+}
 
 
 /* /. */
