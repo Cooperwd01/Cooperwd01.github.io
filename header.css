@@ -12,6 +12,10 @@ h2 {
   font-weight: 800;
 }
 
+.site-title{
+  font-family: 'Schoolbell', cursive;
+  font-size:32px;
+} 
 
 .title-font{
   font-family: 'Questrial', sans-serif;
