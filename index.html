@@ -266,13 +266,15 @@
                                             <div class="form-group">
                                                 <label class="form-label" for="email">Email</label>
                                                 <span class="sr-only" id="email-hint">For example, email@example.com</span>
-                                                <input id="email" class="form-control contact-input" required type="email" name="_replyto" placeholder="For example, email@example.com">
+                                                <input id="email" class="form-control contact-input" required type="email" name="_replyto" placeholder="For example, email@example.com" onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'For example, email@example.com'">
                                             </div>
                                         </div>    
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label class="form-label" for="message">Message</label>
-                                                <textarea id="message" rows="3" class="form-control contact-input" required name="text" placeholder="My megaphone broke, but you don't hear me complaining about it"></textarea>
+                                                <textarea id="message" rows="3" class="form-control contact-input" required name="text" placeholder="My megaphone broke, but you don't hear me complaining about it" onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'You were expecting another joke for free?!'"></textarea>
                                             </div>
                                         </div>    
                                     </div>
