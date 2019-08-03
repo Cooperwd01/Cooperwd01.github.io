@@ -1,4 +1,5 @@
 # Cooperwd01.github.io
-A personal website for me to sell my wares
 
-A static webpage created using html and css with bootstrap4, fontawesome and jquery. 
+A static webpage created using HTML5, CSS3 and jQuery - also used bootstrap4 and fontawesome.
+
+Anyway I'm a writer for hire and I'm good. Hire me please. 
