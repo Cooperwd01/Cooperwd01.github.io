@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 800;
 }
 
@@ -133,9 +133,6 @@ animation: navspace 30s ease infinite;
   transform: rotate(0);
 }
 
-/* .site-title{
-  margin: 0 10px;
-} */
 /* end of Nav toggle */
 
 /* Nav item styles */
