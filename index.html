@@ -82,7 +82,7 @@
                 Writers
                 <span class="morse" aria-hidden="true" role="presentation" data-aos="fade-up" data-aos-duration="1000">.... . .-.. .-.. ---</span>
             </h1>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"> 
+            <svg xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"> 
                 <polygon fill="#010042" points="0,100 100,0 100,100"/>
             </svg>
         </header>
@@ -140,7 +140,7 @@
                     </div>
                 </section>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
                 <polygon fill="#010042" points="0,00 100,0 100,100"/>
             </svg>
             <!--/. -->
@@ -251,13 +251,13 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label class="form-label" for="first-name">First name</label>
-                                                <input id="first-name" name="first-name" class="form-control contact-input" required type="text">
+                                                <input id="first-name" name="first-name" class="form-control contact-input" aria-required="true" required type="text">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label class="form-label" for="last-name">Last name</label>
-                                                <input id="last-name" name="last-name" class="form-control contact-input" required type="text">
+                                                <input id="last-name" name="last-name" class="form-control contact-input" aria-required="true" required type="text">
                                             </div>
                                         </div>    
                                     </div>
@@ -266,14 +266,14 @@
                                             <div class="form-group">
                                                 <label class="form-label" for="email">Email</label>
                                                 <span class="sr-only" id="email-hint">For example, email@example.com</span>
-                                                <input id="email" class="form-control contact-input" required type="email" name="_replyto" placeholder="For example, email@example.com" onfocus="this.placeholder = ''"
+                                                <input id="email" class="form-control contact-input" aria-required="true" required type="email" name="_replyto" placeholder="For example, email@example.com" onfocus="this.placeholder = ''"
                                                 onblur="this.placeholder = 'For example, email@example.com'">
                                             </div>
                                         </div>    
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label class="form-label" for="message">Message</label>
-                                                <textarea id="message" rows="3" class="form-control contact-input" required name="text" placeholder="My megaphone broke, but you don't hear me complaining about it" onfocus="this.placeholder = ''"
+                                                <textarea id="message" rows="3" class="form-control contact-input" aria-required="true" required name="text" placeholder="My megaphone broke, but you don't hear me complaining about it" onfocus="this.placeholder = ''"
                                                 onblur="this.placeholder = 'You were expecting another joke for free?!'"></textarea>
                                             </div>
                                         </div>    
