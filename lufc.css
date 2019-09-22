@@ -1,0 +1,61 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+    background-color: #FFCD00;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 600;
+    color: #1D428A;
+}
+
+h1 {
+    font-size: 4em;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/* colour palette 
+
+yellow: #FFCD00;
+blue: #1D428A;
+gold: #AC944D;
+
+*/
+
+/* button css*/
+.btn-txt {
+    color: #fff;
+    margin-top:160px;
+    display:block;  
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-size: 1.5em;
+}
+
+.lufc-btn{
+    width:200px;
+    height: 200px;
+    border: 2px solid #1D428A;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Anton', sans-serif;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background-color: #fff;
+}
+
+.lufc-btn:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.bielsa{
+    background: url(bielsa-media/images/bielsa-bg.jpg) top center;
+    background-size: cover;
+    background-color: #fff;
+}
+
+.alioski{
+    background: url(bielsa-media/images/alioski-bg.jpg) top center;
+    background-size: cover;
+    background-color: #fff;
+}
