@@ -10,6 +10,11 @@
     margin-top:50px;
 }
 
+.ftr-nav-link{
+  display:inline-block;
+  margin-right: 1em;
+}
+
 .ftr-link{
     color: #fff;
     border-bottom:solid 2px transparent;
