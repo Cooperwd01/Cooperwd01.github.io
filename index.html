@@ -16,19 +16,19 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- WDC CSS/Icons -->
-        <link rel="shortcut icon" type="image/x-icon" href="images/mouse-192.ico" />
-        <link rel="icon" type="image/ico" href="images/mouse-32.ico" sizes="32x32">
-        <link rel="icon" type="image/ico" href="images/mouse-64.ico" sizes="64x64">
-        <link rel="stylesheet" href="header.css" />
-        <link rel="stylesheet" href="main.css" />
-        <link rel="stylesheet" href="footer.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="images/icons/will-192.ico" />
+        <link rel="icon" type="image/ico" href="images/icons/will-32.ico" sizes="32x32">
+        <link rel="icon" type="image/ico" href="images/icons/will-64.ico" sizes="64x64">
+        <link rel="stylesheet" href="css/main.css" />
+    
         <!-- AOS CSS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Questrial|Schoolbell&display=swap" rel="stylesheet">
-        <title>Will Cooper & Owen Cooper - Comedy Writers</title>
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <title>Will &amp; Owen Cooper - Comedy Writers</title>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66760105-2"></script>
@@ -39,270 +39,260 @@
 
             gtag('config', 'UA-66760105-2');
         </script>
-
+        <script type="text/javascript" src="js/app.js"></script>
+        <script src="js/nunjucks.js"></script>
+        <noscript>
+            <style type="text/css">
+                [data-aos] {
+                    opacity: 1 !important;
+                    transform: translate(0) scale(1) !important;
+                }
+            </style>
+        </noscript>
     </head>
     <body>
-        <header class="header-color">
+        <header data-aos="fade-down" data-aos-duration="1500">
             <!-- Skip to main content-->
             <a class="skip-link sr-only sr-only-focusable" href="#content">Skip to main content</a>
             <div class="container">
-                <nav class="pl-2 pr-0 mr-0 navbar nav-color navbar-expand-md navbar-dark bd-navbar" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="d-flex flex-grow-1">
-                        <span class="nav-title navbar-brand">
-                            <!-- <i class="d-none d-sm-inline fas fa-pen-alt" aria-hidden="true"></i> -->
-                            <span class="site-title">Will &amp; Owen Cooper</span>
-                        </span>
-                        
-                        <div class="w-100 text-right">
-                            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
+                <div class="nav-row row-fluid">
+                    <nav class="pl-0 pr-0 mr-0 navbar nav-color navbar-expand-md navbar-dark bd-navbar">
+                        <div class="d-flex flex-grow-1">
+                            <span class="nav-title navbar-brand">
+                                <img class="nav-img" src="images/nav-img-boi.png" alt="Will and Owen Cooper - Comedy Writers"/>
+                            </span>
+                            <div class="w-100 text-right">
+                                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNav">
-                        <ul class="navbar-nav ml-auto flex-nowrap">
-                            <li class="nav-item">
-                                <a class="hover-underline-animation nav-link" href="#about-us">About us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="hover-underline-animation nav-link" href="#credits">Credits</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="hover-underline-animation nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                        <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNav">
+                            <ul class="navbar-nav ml-auto flex-nowrap">
+                                <li class="nav-item">
+                                    <a class="hover-underline-animation nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hover-underline-animation nav-link" href="#credits">Credits</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hover-underline-animation nav-link" href="#awards">Awards</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="hover-underline-animation nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row-fluid mb-4">
+                    <h1 class="title-font"> 
+                        Will &amp; Owen Cooper 
+                    </h1>
+                    <span class="sub-h1">Comedy writers</span>
+                    <noscript>Hey, it's cool that you've got javaScript turned off, but you might be missing some of the cool stuff I spent fucking ages making.</noscript>
+                </div>
             </div>
             <!-- /.-->
-            
-            <h1 class="text-center title-font" data-aos="fade-up" data-aos-duration="1000"> 
-                Writers
-                <span class="morse" aria-hidden="true" role="presentation" data-aos="fade-up" data-aos-duration="1000">.... . .-.. .-.. ---</span>
-            </h1>
-            <noscript>Enable javaScript to see our stupid faces and all our credits.</noscript>
-            <svg xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"> 
-                <polygon fill="#010042" points="0,100 100,0 100,100"/>
-            </svg>
         </header>
         
         <main id="content" class="main-style">
             <!-- About us -->
-            <div class="container-fluid container-navy">
-                <section class="light-text" id="introduction">
-                    <div class="container">
-                        <div class="row row-fluid pl-md-2">
-                            <a id="about-us" name="about-us" class="anchor"></a>
-                            <div class="col-md-6 col-lg-8" data-aos="fade-up" data-aos-duration="1000">
-                                <h2 class="text-center">
-                                    <!-- <i class="fas fa-theater-masks" aria-hidden="true"></i> -->
-                                    <span class="icon-heading">About us
-                                    <span class="morse-sub" aria-hidden="true" role="presentation">.-- . .----. .-. .</span></span>
-                                </h2>
-                                
-                                <p class="mt-4 ">Hello, we’re Will Cooper & Owen Cooper, comedy writers and brothers who hold the Guiness World Record for the least amount of records won.</p>
-                                <p>We’ve written for radio and TV and we even wrote a book called Great Expectations… wait no, that was Dickens wasn’t it? Sick of Dickens and his bloody books that we didn’t write.</p>     
-                                <p>If you’ve got a writing job that needs doing get in touch to hear about our reasonable rates. Bloody austerity, innit?</p>
-                                <!-- a11y text-->
-                                <p class="sr-only">This next bit of text is only for people using screen readers. Lucky you! So, hi, how's it going? How's my screen reader crew? I've worked hard on making this website accessible. If you have any problems, suggestions, feedback or jokes get in touch using the contact form on this page</p>
-                            </div> 
-                            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
-                                <div id="polaroid-carousel" class="polaroid-slider carousel slide carousel-fade" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img class="carousel-img d-block w-100" src="/images/home1-500.jpg" alt="Will Cooper & Owen Cooper looking uncomfortable while being forced to do a press photo for the BBC" />
-                                            <div class="polaroid-text">
-                                                <p class="p-jk">The Cooper's being self-conscious about their hands</p>
-                                            </div>
+            <div class="txt-bg" data-aos="fade-down" data-aos-duration="1500">
+                <div class="container">
+                    <div class="row">
+                        <a id="about-us" name="about" class="anchor"></a>
+                        <div class="col-md-6 col-lg-8">
+                            <h2 class="mt-3">About</h2>
+                            <p>Hello, we’re Will Cooper & Owen Cooper, comedy writers and brothers who hold the Guiness World Record for the least amount of records won.</p>
+
+                            <p>We’ve written for radio and TV and we even wrote a book called Great Expectations… wait no, that was Dickens wasn’t it? Sick of Dickens and his bloody books that we didn’t write.</p>
+
+                            <p>If you’ve got a writing job that needs doing get in touch to hear about our reasonable rates. Bloody austerity, innit?</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div id="polaroid-carousel" class="polaroid-slider carousel slide carousel-fade mt-4 mb-4" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="carousel-img d-block w-100" src="/images/home1-500.jpg" alt="Will Cooper & Owen Cooper looking uncomfortable while being forced to do a press photo for the BBC" />
+                                        <div class="polaroid-text">
+                                            <p class="p-jk">The Cooper's being self-conscious about their hands</p>
                                         </div>
-                                        <div class="carousel-item">
-                                            <img class="carousel-img d-block w-100" src="/images/home2-500.jpg" alt="Owen Cooper doing stand up comedy for the BBC" />
-                                            <div class="polaroid-text">
-                                                <p class="p-jk">Owen Cooper doing some great stuff</p>
-                                            </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="carousel-img d-block w-100" src="/images/home2-500.jpg" alt="Owen Cooper doing stand up comedy for the BBC" />
+                                        <div class="polaroid-text">
+                                            <p class="p-jk">Owen Cooper doing some great stuff</p>
                                         </div>
-                                        <div class="carousel-item">
-                                            <img class="carousel-img d-block w-100" src="/images/home3-500.jpg" alt="Will Cooper & Owen Cooper acting with Game of Thrones star Ben Crompton" />
-                                            <div class="polaroid-text">
-                                                <p class="p-jk">"Amazing" <br />- Ricky Gervais</p>
-                                            </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="carousel-img d-block w-100" src="/images/home3-500.jpg" alt="Will Cooper & Owen Cooper acting with Game of Thrones star Ben Crompton" />
+                                        <div class="polaroid-text">
+                                            <p class="p-jk">"Amazing" <br />- Ricky Gervais</p>
                                         </div>
-                                        <div class="carousel-item">
-                                            <img class="carousel-img d-block w-100" src="/images/home4-500.jpg" alt="Just us making comedy legend Ross Noble laugh" />
-                                            <div class="polaroid-text">
-                                                <p class="p-jk">The lads having a bloody good laugh with Ross Noble</p>
-                                            </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="carousel-img d-block w-100" src="/images/home4-500.jpg" alt="Just us making comedy legend Ross Noble laugh" />
+                                        <div class="polaroid-text">
+                                            <p class="p-jk">The lads having a bloody good laugh with Ross Noble</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>      
+                        </div>
                     </div>
-                </section>
+                </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-                <polygon fill="#010042" points="0,00 100,0 100,100"/>
-            </svg>
-            <!--/. -->
-
-            <!-- Credits -->
-            <div class="container container-white">
-                <section id="media-credits">
-                    <div class="row">
-                        <a id="credits" name="credits" class="anchor"></a>
-                        <div class="col-md darker-text" data-aos="fade-up">
-                            <h2 class="text-center">
-                                Credits
-                                <span class="morse-sub" aria-hidden="true" role="presentation">--. --- --- -..</span>
-                            </h2>
-                            <h3 class="credit-section-title">
-                                <i class="fas fa-tv icon-gradient" aria-hidden="true"></i>
-                                <span>Television</span>
-                            </h3>
-                        </div> 
-                    </div>
-                    <div class="row row-fluid">
-                        <div class="col-md">
-                            <div class="tv-credit" data-aos="fade-up"><span class="credit-title">Diddy TV (Series 3)</span><span class="credit-channel">CBBC</span><span class="credit-info">Additional Material (Will), 2 Episodes</span><span class="credit-producer">Producer: Steve Ryde</span></div>
-                            <div class="tv-credit" data-aos="fade-up"><span class="credit-title">The Dog Ate My Homework (Series 2)</span><span class="credit-channel">CBBC</span><span class="credit-info">Writers, 10 Episodes</span><span class="credit-producer">Producer: Margaret-Ann Docherty</span></div>
-                            <div class="tv-credit" data-aos="fade-up"><span class="credit-title">Mock the Week (Series 11-13)</span><span class="credit-channel">BBC 2</span><span class="credit-info">Additional Material, 26 Episodes</span> <span class="credit-producer">Producers: Angst Productions, via Chris Addison</span></div>
-                            <div class="tv-credit" data-aos="fade-up"><span class="credit-title">Celebrity Juice</span><span class="credit-channel">ITV 2</span><span class="credit-info">Additional Material, 2 Episodes</span><span class="credit-producer">Producers: Leon Wilson</span></div>
-                            <div class="tv-credit" data-aos="fade-up"><span class="credit-title">Hyper Mouse</span><span class="credit-channel">Made in Leeds</span><span class="credit-info">Creator (Owen) / Writers (Both), 4 Episodes</span><span class="credit-producer">Producers: Owen Cooper, Dave Mills</span></div> 
-                        </div> 
-                        <div class="col-md">
-                            <div class="tv-credit" data-aos="fade-up"><span class="credit-title">Breaking the News (Series 1)</span><span class="credit-channel">BBC 2 Scotland</span><span class="credit-info">Additional Material (Will), 1 Episode</span><span class="credit-producer">Producers: Lauren Mackay, David Flynn</span></div>
-                            <div class="tv-credit" data-aos="fade-up"><span class="credit-title">Go 8-Bit DLC</span><span class="credit-channel">Dave</span><span class="credit-info">Additional Material, 10 Episodes</span><span class="credit-producer">Producer: Rohan Acharya</span></div>
-                            <div class="tv-credit" data-aos="fade-up"><span class="credit-title">Pop Sludge</span><span class="credit-channel">4Music</span><span class="credit-info">Actor (Owen), 1 Episode</span><span class="credit-producer">Producer: Chris Davies</span></div>
-                            <div class="tv-credit" data-aos="fade-up"><span class="credit-title">How to Go Viral: The Art of the Meme</span><span class="credit-channel">BBC Four</span><span class="credit-info">Contributer (Owen), 1 Episode</span><span class="credit-producer">Producer: Richard Clay</span></div>
-                            <div class="tv-credit" data-aos="fade-up"><span class="credit-title">North vs South (Recorded Pilot)</span><span class="credit-channel">BBC Three</span><span class="credit-info">Writers, 1 Episode</span><span class="credit-producer">Producers: Helen Spencer, Ray Lau</span></div>
-                        </div>      
-                    </div>
-                    <div class="row">
-                        <div class="col-md darker-text" data-aos="fade-up">
-                            <h3 class="credit-section-title">
-                                <i class="fas fa-broadcast-tower icon-gradient" aria-hidden="true"></i>
-                                <span>Radio</span>
-                            </h3>
-                        </div> 
-                    </div>
-                    <div class="row row-fluid">
-                        <div class="col-md">
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">Tom Deacon’s Road Show</span><span class="credit-channel">BBC Radio 1</span><span class="credit-info">Writers, 1 Episode</span><span class="credit-producer">Producer: Carl Cooper</span></div>
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">Dave Gorman’s Pub Olympics</span><span class="credit-channel">BBC Radio 2</span><span class="credit-info">Writers, 1 Episode</span><span class="credit-producer">Producer: Carl Cooper</span></div>
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">Alun Cochrane’s Fun House</span><span class="credit-channel">BBC Radio 4</span><span class="credit-info">Additional Material, 1 Episode</span> <span class="credit-producer">Producer: Carl Cooper</span></div>
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">Newsjack (Series 6-9)</span><span class="credit-channel">BBC Radio 4 Extra</span><span class="credit-info">Writers, 5 Episodes</span><span class="credit-producer">Producers: Leon Wilson</span></div>
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">MacAulay & Co</span><span class="credit-channel">BBC Radio Scotland</span><span class="credit-info">Additional Material (Will), 1 Episode</span><span class="credit-producer">Producer: Margaret-Ann Docherty</span></div> 
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">Get It On… With Bryan Burnett</span><span class="credit-channel">BBC Radio Scotland</span><span class="credit-info">Additional Material (Will), 1 Episode</span><span class="credit-producer">Producer: Margaret-Ann Docherty</span></div>
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">The Comedy Cafe</span><span class="credit-channel">BBC Radio Scotland</span><span class="credit-info">Additional Material, 1 Episode</span><span class="credit-producer">Producer: Margaret-Ann Docherty</span></div>
-                        </div> 
-                        <div class="col-md">
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">Breaking the News (Series 9)</span><span class="credit-channel">BBC Radio Scotland</span><span class="credit-info">Writer (Will), 3 Episodes</span><span class="credit-producer">Producer: Lauren Mackay</span></div>
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">The Show What You Wrote (Series 2)</span><span class="credit-channel">BBC Radio 4</span><span class="credit-info">Writers, 2 Episodes</span><span class="credit-producer">Producer: Carl Cooper</span></div>
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">The Guessing Game (Series 2)</span><span class="credit-channel">BBC Radio Scotland</span><span class="credit-info">Writers, 6 Episodes</span><span class="credit-producer">Producer: Margaret-Ann Docherty</span></div>
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">Jesting About</span><span class="credit-channel">BBC Radio Newcastle</span><span class="credit-info">Writers, 1 Episode</span><span class="credit-producer">Producers: Helen Spencer, Steve Drayton, Carl Cooper</span></div>
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">It’s Grin Up North</span><span class="credit-channel">BBC Radio Newcastle</span><span class="credit-info">Contributors, 1 Episode</span><span class="credit-producer"></span></div>
-                            <div class="radio-credit" data-aos="fade-up"><span class="credit-title">Damn the Torpedoes (Christmas Special 2017)</span><span class="credit-channel">BFBS Radio</span><span class="credit-info">Additional Material, 1 Episode</span><span class="credit-producer">Producer: Alison Pritchard</span></div>
-                        </div>      
-                    </div>
-                    <div class="row row-fluid">
-                        <div class="col-md">
-                            <div class="credit-align" data-aos="fade-up">
-                                <h3 class="credit-align-title">
-                                    <i class="fas fa-globe-europe icon-gradient" aria-hidden="true"></i>
-                                    <span>Online</span>
-                                </h3>
-                            </div>
-                            <div class="online-credit" data-aos="fade-up"><span class="credit-title"><a class="media-link" href="https://www.youtube.com/channel/UCaLj9lObtqGw6PDmojVqoog/videos" target="_blank" rel="noopener">Owen Cooper Youtube Channel <span class="sr-only">(Link opens in a new tab)</span></a></span><span class="brag-box"><i class="fas fa-rocket fa-lg" aria-hidden="true"></i>Over 2.5 million views</span><span class="credit-channel">Youtube</span><span class="credit-info">Writers</span><span class="credit-producer">Producer: Owen Cooper</span></div>
-                            <div class="online-credit" data-aos="fade-up"><span class="credit-title"><a class="media-link" href="https://vimeo.com/314123117" target="_blank" rel="noopener">Making Friends <span class="sr-only">(Link opens in a new tab)</span></a></span><span class="credit-channel">Short Film</span><span class="credit-info">Writer (Owen)</span><span class="credit-producer">Producer: Ollie Wiggins</span></div>
-                            <div class="online-credit" data-aos="fade-up"><span class="credit-title"><a class="media-link" href="https://vimeo.com/39584288" target="_blank" rel="noopener">Legs <span class="sr-only">(Link opens in a new tab)</span></a></span><span class="credit-channel">Short Film, Fantomeline Pictures</span><span class="credit-info">Actors</span><span class="credit-producer">Producer: Dunno</span></div>
-                            <div class="online-credit" data-aos="fade-up"><span class="credit-title">Friday Football Special</span><span class="credit-channel">Microsoft, MSN Sport</span><span class="credit-info">Writers</span><span class="credit-producer">Producer: Nick Astor</span></div>
-                        </div> 
-                        <div class="col-md">
-                            <div class="theatre-align credit-align" data-aos="fade-up">
-                                <h3 class="credit-align-title">
-                                    <i class="fas fa-theater-masks icon-gradient" aria-hidden="true"></i>
-                                    <span>Theatre</span>
-                                </h3>
-                            </div>
-                            <div class="theatre-credit" data-aos="fade-up"><span class="credit-title">Take the Wheel, The Twilight Hour</span><span class="credit-channel">Canal Cafe Theatre & Etcetera Theatre</span><span class="credit-info">Writer (Will)</span><span class="credit-producer">Producers: William Ribó, Madeleine Meurman</span></div>
-                        </div>      
-                    </div>
-                </section>
-            </div>    
             <!-- /. -->
 
-            <!-- Contact form -->           
-            <div class="container-fluid form-color" data-aos="fade-up">
-                <section id="contact-form">
-                    <div class="row row-fluid">
-                        <a id="contact" name="contact" class="anchor"></a>
-                        <div class="col" data-aos="fade-up">
-                            <h2 class="contact-title text-center">
-                                Contact
-                                <span class="morse-sub" aria-hidden="true" role="presentation">.-- .-. .. - . .-. ...</span>
-                            </h2>
+            <!-- Credits -->
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <a id="credits" name="credits" class="anchor"></a>
+                    <div class="col-md-8">
+                        <h2>Credits</h2>
+                    </div>
+                </div>
+                <div class="row mt-3 mt-3 mb-5">
+                    <div class="col-md-8 mb-3">
+                        <h3>TV</h3>
+                        <div id="tv-credits" class="credit-wrapper">
+                            <ul class="credit-list">
+                                <li>Mock the Week - BBC 2</li>
+                                <li>Diddy TV - CBBC</li>
+                                <li>The Dog Ate My Homework - CBBC</li>
+                                <li>Celebrity Juice - ITV 2</li>
+                                <li>Hyper Mouse - Made in Leeds</li>
+                                <li>Breaking the News - BBC 2 Scotland</li>
+                                <li>Go 8-Bit DLC - Dave</li>
+                                <li>Pop Sludge - 4Music</li>
+                                <li>How to Go Viral: The Art of the Meme - BBC Four</li>
+                                <li>North vs South (Recorded Pilot) - BBC Three</li>
+                            </ul>
                         </div>
-                    </div> 
-                    <div class="container mt-4 pb-5">
+                    </div>
+                    <div class="col-md-8 mb-3">
+                        <h3>Radio</h3>
+                        <div id="radio-credits" class="credit-wrapper">
+                            <ul class="credit-list">
+                                <li>Tom Deacon’s Road Show - BBC Radio 1</li>
+                                <li>Dave Gorman’s Pub Olympics- BBC Radio 2</li>
+                                <li>Alun Cochrane’s Fun House - BBC Radio 4</li>
+                                <li>Newsjack - BBC Radio 4 Extra</li>
+                                <li>MacAulay & Co - BBC Radio Scotland</li>
+                                <li>Get It On… With Bryan Burnett - BBC Radio Scotland</li>
+                                <li>The Comedy Cafe - BBC Radio Scotland</li>
+                                <li>Breaking the News - BBC Radio Scotland</li>
+                                <li>The Guessing Game - BBC Radio Scotland</li>
+                                <li>The Show What You Wrote - BBC Radio 4</li>
+                                <li>Jesting About - BBC Radio Newcastle</li>
+                                <li>It’s Grin Up North - BBC Radio Newcastle</li>
+                                <li>Damn the Torpedoes - BFBS Radio</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mb-3">
+                        <h3>Theatre</h3>
+                        <div id="theatre-credits" class="credit-wrapper">
+                            <ul class="credit-list">
+                                <li>Take the Wheel, The Twilight Hour -
+                                    Canal Cafe Theatre & Etcetera Theatre</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Online</h3>
+                        <div id="theatre-credits" class="credit-wrapper">
+                            <ul class="credit-list">
+                                <li>Owen's Youtube Channel</li>
+                                <li>Making Friends - Online short</li>
+                                <li>Friday Football Special - Microsoft, MSN Sport</li>
+                                <li>Legs - Fantomeline Pictures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards -->
+            <div class="container mb-5">
+                <div class="row">
+                    <a id="awards" name="awards" class="anchor"></a>
+                    <div class="col-md-8">
+                        <h2>Awards</h2>
+                        <ul class="credit-list">
+                            <li>Scottish BAFTA - Best Children's show</li>
+                            <li>BBC Funny on Three - Winners</li>
+                            <li>The David Nobbs Memorial Trust - 2019 Finalist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /. -->
+
+            <!-- Contact form -->  
+            <div class="form-color">         
+                <div class="container">
+                    <section id="contact-form">
                         <div class="row">
-                            <div class="col-md-10 mx-auto">
-                                <form action="https://formspree.io/cooperbrotherswrite@gmail.com" method="POST">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="form-label" for="first-name">First name</label>
-                                                <input id="first-name" name="first-name" class="form-control contact-input" aria-required="true" required type="text">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="form-label" for="last-name">Last name</label>
-                                                <input id="last-name" name="last-name" class="form-control contact-input" aria-required="true" required type="text">
-                                            </div>
-                                        </div>    
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="form-label" for="email">Email</label>
-                                                <span class="sr-only" id="email-hint">For example, email@example.com</span>
-                                                <input id="email" class="form-control contact-input" aria-required="true" required type="email" name="_replyto" placeholder="For example, email@example.com" onfocus="this.placeholder = ''"
-                                                onblur="this.placeholder = 'For example, email@example.com'">
-                                            </div>
-                                        </div>    
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="form-label" for="message">Message</label>
-                                                <textarea id="message" rows="3" class="form-control contact-input" aria-required="true" required name="text" placeholder="My megaphone broke, but you don't hear me complaining about it" onfocus="this.placeholder = ''"
-                                                onblur="this.placeholder = 'You were expecting another joke for free?!'"></textarea>
-                                            </div>
-                                        </div>    
-                                    </div>
-                                    <button class="btn-color btn btn-primary px-4 float-right" type="submit" value="Send"><i class="far fa-paper-plane" aria-hidden="true"></i> Send</button>
-                                </form>
+                            <a id="contact" name="contact" class="anchor"></a>
+                            <div class="col">
+                                <h2 class="mt-3">
+                                    Contact
+                                </h2>
                             </div>
-                        </div>
-                    </div> 
-                </section>
-            </div>   
+                        </div> 
+                        <form action="https://formspree.io/cooperbrotherswrite@gmail.com" method="POST">
+                            <div class="form-row mt-3">
+                                <div class="form-group col-md-4">
+                                    <label for="first-name">First name</label>
+                                    <input id="first-name" class="form-control contact-input" aria-required="true" required type="text">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="last-name">Last name</label>
+                                    <input id="last-name" class="form-control contact-input" aria-required="true" required type="text">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="email">Email</label>
+                                    <input id="email" class="form-control contact-input" aria-required="true" required type="email" name="_replyto" placeholder="email@example.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" rows="3" class="form-control wide-input contact-input" aria-required="true" required name="text" placeholder="My megaphone broke, but you don't hear me complaining about it" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'You were expecting another joke for free?!'"></textarea>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <button class="btn-color btn btn-primary" type="submit" value="Send"><i class="far fa-paper-plane" aria-hidden="true"></i> Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>  
+            </div>
             <!-- /. -->    
         </main>
         
         <!-- Footer -->
-        <footer class="footer-style page-footer font-small pt-4">
-            <div class="container text-center text-md-left">
+        <footer class="footer-style page-footer font-small pt-3 pb-3">
+            <div class="container text-md-left">
                 <div class="row row-ftr">
-                    <div class="col-md">
-                        <h2 class="footer-title">Will Cooper & Owen Cooper</h2>
+                    <div class="col-md-8">
+                        <h2 class="footer-title">Will &amp; Owen Cooper</h2>
                         <ul class="list-unstyled mt-4">
-                            <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#about-us"><!--<i class="fas fa-theater-masks" aria-hidden="true"></i>-->About Us</a></li>
-                            <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#credits"><!--<i class="fas fa-book" aria-hidden="true"></i>-->Credits</a></li>
-                            <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#contact"><!--<i class="far fa-paper-plane" aria-hidden="true"></i>-->Contact</a></li>
+                            <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#about-us">About</a></li>
+                            <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#credits">Credits</a></li>
+                            <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#awards">Awards</a></li>
+                            <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#contact">Contact</a></li>
                         </ul>
                     </div>    
-                    <div class="col-md mt-3-md">    
+                    <div class="col-md-4 mt-3-md">    
                         <ul class="social-network social-circle text-md-right">
                             <li class="mr-3"><a href="https://www.youtube.com/channel/UCaLj9lObtqGw6PDmojVqoog/videos" class="icoYoutube soc-link" tabindex="0" rel="noopener"><i class="fab fa-youtube" aria-hidden="true"></i><span class="sr-only">Owen's youtube (link opens in new window)</span></a></li>
                             <li><a href="https://twitter.com/@Owen_HyperMouse" class="icoTwitter soc-link" tabindex="0" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Owen's twitter (link opens in new window)</span></a></li>
@@ -312,7 +302,6 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright text-center">© 2019 Copyright - Will Cooper & Owen Cooper </div>
         </footer>
         <!-- /. -->
 
@@ -346,6 +335,6 @@
             mirror: false, // whether elements should animate out while scrolling past them
             anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
             });
-        </script>
+        </script> 
     </body>
 </html>
