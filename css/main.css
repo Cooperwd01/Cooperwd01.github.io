@@ -298,6 +298,7 @@ html, body {
         min-height: 100px;
         padding-top:20px;
     }
+
 }
 @media only screen and (max-width:767px) {
     .polaroid{
@@ -314,6 +315,11 @@ html, body {
         padding:10px 20px;
         font-size:20px
     }
+    .carousel-img{
+        border-top: 15px solid white;
+        border-left: 15px solid white;
+        border-right: 15px solid white;
+    } 
 }
 
 /* tablet style */
