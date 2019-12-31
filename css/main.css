@@ -37,8 +37,7 @@ a:focus{
     font-family: 'Abril Fatface', sans-serif;
     color: #191919;
     font-size: 5em;
-    margin-top: 10px;
-    /* text-shadow: 2px 2px 0px rgba(255,18,200,0.75); */
+    margin-top: 0px;
 }
   
 @media only screen and (max-width:991px) {
@@ -68,7 +67,7 @@ a.skip-link {
   
 .nav-img{
     width: 80px;
-    margin-top:-10px;
+    margin-top:0px;
 }
   
   
@@ -150,6 +149,7 @@ button.navbar-toggler:focus {
 .nav-link {
     color: #191919 !important;
     border-bottom:solid 2px transparent;
+    text-decoration: none;
 }
   
 .nav-link:focus{
@@ -486,6 +486,7 @@ button.navbar-toggler.collapsed:focus {
     font-size: 20px;
     font-family: 'Questrial', sans-serif;
     padding: 2px;
+    text-decoration: none;
 }
 
 .ftr-link:hover{
