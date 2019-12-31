@@ -12,11 +12,20 @@ span.sub-h1 {
     color: #575a63;
     font-weight: 800;
 }
-  
+
+a {
+    color: #191919;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #575a63;
+}
+
 a:focus{
     outline: 2px solid #191919;
 }
-  
+
 .site-title{
     font-family: 'Questrial', sans-serif;
     font-size:32px;
