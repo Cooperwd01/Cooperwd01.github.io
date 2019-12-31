@@ -492,6 +492,9 @@ button.navbar-toggler.collapsed:focus {
     .ftr-link{
         margin-bottom: 5px;
     }
+    .ftr-nav-link{
+        margin-right: 15px;
+    }
 }
   
 @media only screen and (min-width:768px) {
@@ -514,10 +517,6 @@ button.navbar-toggler.collapsed:focus {
     font-weight:800;
     font-size:18px;
 }
-
- ul > li > a > i {
-    margin-right:10px;
- }
 
  /* underline animation */
 .ftr-underline-animation {

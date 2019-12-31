@@ -1,0 +1,6 @@
+/* video panel */
+.toon-bg-test {
+    background-color: #191919;
+    background-image: url("/images/bg/bg-texture.png");
+    color: #fff;
+}
