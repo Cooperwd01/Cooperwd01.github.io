@@ -477,12 +477,6 @@ lite-youtube {
     filter: grayscale(80%); */
 }
 
-/* @media only screen and (max-width:767px) {
-    lite-youtube {
-        width: 80%;
-    }
-} */
-
 .content-wrapper {
     margin: 0px auto; /* my */
     width: 70%;
@@ -490,6 +484,15 @@ lite-youtube {
     background: #191919;
     font-size: 20px;
 }
+
+@media only screen and (max-width:499px) {
+    lite-youtube {
+        width: 65%;
+    }
+    .content-wrapper {
+        width:65%;
+    }
+}  
 
 .content-wrapper > span {
     padding:10px 5px;
