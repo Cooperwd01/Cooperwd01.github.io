@@ -353,9 +353,9 @@ form {
     background-color: #DEE0E2;
     color:#191919;
     font-weight:800;
-    margin-bottom:-55px;
-    margin-top:20px;
-    padding-bottom:20px;
+    /* margin-bottom:-55px; */
+    /* margin-top:20px;
+    padding-bottom:20px; */
 }
 
 .form-group{
@@ -615,6 +615,27 @@ lite-youtube {
 
 /* END OF VID STYLES */
 
+/* nav top button */
+.top-link-img {
+    background: #575a63;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    -webkit-box-shadow: 2px 1px 0px 0px rgba(25,25,25,1);
+    -moz-box-shadow: 2px 1px 0px 0px rgba(25,25,25,1);
+    box-shadow: 2px 1px 0px 0px rgba(25,25,25,1);
+    border: 2px solid #191919;
+    transition: 0.3s;
+}
+
+.top-link-img:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
 
 /* --------------------------------------------------------------------------- */
 
@@ -628,7 +649,7 @@ lite-youtube {
 
 .footer-style{
     background-color:#191919; 
-    margin-top:50px;
+    /* margin-top:50px; */
 }
 
 .ftr-nav-link{
