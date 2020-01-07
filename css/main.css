@@ -464,40 +464,20 @@ button.navbar-toggler.collapsed:focus {
 }
 
 lite-youtube {
-    background-color: #000;
+    background-color: #191919;
     position: relative;
     display: block;
     contain: content;
     background-position: center center;
     background-size: cover;
     cursor: pointer;
-    margin: 0px auto; /* my */
-    width: 70%;
+    /* margin: 0px auto;  */
+    width: 100%;
     /* -webkit-filter: grayscale(80%);
     filter: grayscale(80%); */
-}
-
-.content-wrapper {
-    margin: 0px auto; /* my */
-    width: 70%;
-    color: #fff;
-    background: #191919;
-    font-size: 20px;
-}
-
-@media only screen and (max-width:499px) {
-    lite-youtube {
-        width: 65%;
-    }
-    .content-wrapper {
-        width:65%;
-    }
-}  
-
-.content-wrapper > span {
-    padding:10px 5px;
-    text-align: center;
-    display:block;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 /* gradient */
@@ -555,62 +535,6 @@ lite-youtube.lyt-activated::before,
 lite-youtube.lyt-activated > .lty-playbtn {
     opacity: 0;
     pointer-events: none;
-}
-
-/* vid row styles */
-lite-youtube {
-    border:5px solid #191919;
- }
-
-.nav-icon {
-    height: auto;
-    width: 60px;  
-    border: 3px solid transparent; 
-}
-
-.carousel-glove-prev, .carousel-glove-next, .carousel-glove-prev:hover, .carousel-glove-next:hover, .carousel-glove-prev:focus, .carousel-glove-next:focus  {
-    opacity: 1;
-}
-
-.carousel-glove-prev:hover > .nav-icon, .carousel-glove-next:hover > .nav-icon {
-    border: 3px solid #191919;
-}
-
-.carousel-glove-prev:focus > .nav-icon, .carousel-glove-next:focus > .nav-icon {
-    border: 3px solid #191919;
-}
-
-@media only screen and (min-width:768px) {
-    .nav-icon {
-        width: 90px; 
-    }
-}
-
-/* glove alignment devices */
-.carousel-glove-prev {
-    left: 0px; 
-}
-
-.carousel-glove-next {
-    right: 0px;
-}
-
-@media only screen and (min-width:1200px) {
-    .carousel-glove-prev {
-        left: -40px; 
-    }
-    .carousel-glove-next {
-        right: -40px;
-    }
-}
-
-@media screen and (max-width: 992px) and (min-width: 768px) {
-    .carousel-glove-prev {
-        left: -28px; 
-    }
-    .carousel-glove-next {
-        right: -28px;
-    }
 }
 
 /* END OF VID STYLES */
