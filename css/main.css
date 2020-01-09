@@ -463,6 +463,12 @@ button.navbar-toggler.collapsed:focus {
     background-position: center;
 }
 
+@media only screen and (max-width:767px) {
+    .toon-bg{
+        background-image: url("/images/bg/bg-device.jpg");
+    }
+}
+
 lite-youtube {
     background-color: #191919;
     position: relative;
