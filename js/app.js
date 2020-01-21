@@ -102,7 +102,7 @@ customElements.define('lite-youtube', LiteYTEmbed);
 // Show scroll to top
 $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 2000) {
+    if (y > 2500) {
       $('.top-button').fadeIn();
     } else {
       $('.top-button').fadeOut();

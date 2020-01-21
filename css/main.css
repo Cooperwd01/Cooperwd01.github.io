@@ -191,10 +191,6 @@ button.navbar-toggler:focus {
     }
 }
 /* end of Nav / end of header */
-  
-.row-fluid {
-        margin-top:0px;
-}
  
 /* underline animation */
 .hover-underline-animation {
@@ -271,10 +267,6 @@ html, body {
     margin-top:-10px;  
 }
 
-.p-jk {
-    margin: 0px;
-}
-
 .polaroid-slider {
     /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) !important; */
     margin: 10px 20px;
@@ -313,19 +305,18 @@ html, body {
     }
     .polaroid-text {
         min-height: 90px;
-        padding:10px 20px;
+        padding:10px 50px;
         font-size:20px
     }
     .polaroid-slider {
-        margin: 10px 20px;
+        margin: 0 auto;
         width: 100%;
         transform: rotate(0deg);
         backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
         -o-backface-visibility: hidden;
-    }
-    
+    }    
 }
 
 /* tablet style */
@@ -353,9 +344,6 @@ form {
     background-color: #DEE0E2;
     color:#191919;
     font-weight:800;
-    /* margin-bottom:-55px; */
-    /* margin-top:20px;
-    padding-bottom:20px; */
 }
 
 .form-group{
@@ -365,7 +353,6 @@ form {
 input:focus, textarea:focus{
     box-shadow: none !important; /* removes default blue box-shadow */
 }
-
 
 .form-label {
     font-size: 20px;
@@ -477,10 +464,7 @@ lite-youtube {
     background-position: center center;
     background-size: cover;
     cursor: pointer;
-    /* margin: 0px auto;  */
     width: 100%;
-    /* -webkit-filter: grayscale(80%);
-    filter: grayscale(80%); */
     border: 4px solid #fff;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -547,8 +531,8 @@ lite-youtube.lyt-activated > .lty-playbtn {
 
 /* back to top button */
 .top-link-img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 #back-top {
@@ -561,12 +545,11 @@ lite-youtube.lyt-activated > .lty-playbtn {
     outline: none; 
     background-color: #575a63;
     cursor: pointer; 
-    padding: 10px; /* Some padding */
-    border-radius: 50%; /* Rounded corners */
+    padding: 5px; 
+    border-radius: 50%; 
     -webkit-box-shadow: 1px 2px 0px 0px rgba(25,25,25,1);
     -moz-box-shadow: 1px 2px 0px 0px rgba(25,25,25,1);
     box-shadow: 1px 2px 0px 0px rgba(25,25,25,1);
-    /* transition: 0.3s; */
     opacity: 0.9;
   }
 
@@ -607,7 +590,6 @@ lite-youtube.lyt-activated > .lty-playbtn {
 
 .footer-style{
     background-color:#191919; 
-    /* margin-top:50px; */
 }
 
 .ftr-nav-link{
