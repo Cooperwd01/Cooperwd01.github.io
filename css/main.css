@@ -305,7 +305,7 @@ html, body {
     }
     .polaroid-text {
         min-height: 90px;
-        padding:10px 50px;
+        padding:10px 20px;
         font-size:20px
     }
     .polaroid-slider {
@@ -402,7 +402,7 @@ input[type=text], input[type=email], textarea{
     color: #191919;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-button > i{
+button > i {
     margin-right: 10px;
 }
 
