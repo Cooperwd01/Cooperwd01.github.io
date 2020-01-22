@@ -8,7 +8,7 @@ h2 {
 }
   
 span.sub-h1 {
-    font-size: 40px;
+    font-size: 3em;
     color: #575a63;
     font-weight: 800;
 }
@@ -25,13 +25,6 @@ a:hover {
 a:focus{
     outline: 2px solid #191919;
 }
-
-.site-title{
-    font-family: 'Questrial', sans-serif;
-    font-size:32px;
-    color: #191919;
-    font-weight: 800;
-} 
   
 .title-font{
     font-family: 'Abril Fatface', sans-serif;
@@ -46,6 +39,14 @@ a:focus{
     }
 }
 
+@media only screen and (max-width:767px) {
+    .title-font {
+        font-size: 3.5em;
+    }
+    span.sub-h1 {
+        font-size: 2.5em;
+    }
+}
 .secondary-heading {
     color:#636363;
     font-size:1.25em;
