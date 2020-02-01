@@ -436,6 +436,13 @@ button.navbar-toggler.collapsed:focus {
     color: #fff;
 }
 
+/* NO JS text */
+.js-on-txt {
+    font-size:40px;
+    color:#fff;
+    display: block;
+    text-shadow: -3px 2px 3px #000000;
+}
 /* VIDEO PANEL CSS */
 .toon-bg{
     background-color: #DEE0E2;
@@ -616,6 +623,13 @@ lite-youtube.lyt-activated > .lty-playbtn {
 
 .ftr-link:focus{
   outline: 2px solid #fff;
+}
+
+@media only screen and (max-width:400px) {
+    .ftr-nav-link {
+        display: block;
+        margin-right: 0px;
+    }
 }
 
 @media only screen and (max-width:767px) {
