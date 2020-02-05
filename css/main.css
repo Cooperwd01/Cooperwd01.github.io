@@ -561,6 +561,10 @@ lite-youtube.lyt-activated > .lty-playbtn {
     box-shadow: none;
 }
 
+#back-top:focus{
+    outline: 3px solid #191919;
+}
+
 @media only screen and (min-width:991px) {
     #back-top {
         right:18px;
