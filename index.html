@@ -332,6 +332,12 @@
             <button class="top-button" id="back-top" title="Go to top"><img src="images/backtotop-small.png" class="top-link-img" alt="Back to top, baby" /></button>
                     
         </main>
+
+        <!-- LOADER -->
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <!-- /. -->
         
         <!-- Footer -->
         <footer class="footer-style page-footer font-small pt-3 pb-3">
@@ -391,6 +397,10 @@
             mirror: false, // whether elements should animate out while scrolling past them
             anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
             });
-        </script> 
+        </script>
+        <!-- loader script --> 
+        <script>$(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+       });</script>
     </body>
 </html>

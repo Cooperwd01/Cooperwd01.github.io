@@ -805,3 +805,41 @@ Dark Grey: #575a63;
 Light Grey: #DEE0E2;
 
 */
+
+
+/* loader css */
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #191919;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    border: 4px solid #f9d70b;
+    animation: loader 2s infinite ease;
+    border-radius: 5px;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #f9d70b;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }  
+/* /. */
