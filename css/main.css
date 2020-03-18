@@ -842,4 +842,8 @@ Light Grey: #DEE0E2;
     75% { transform: rotate(360deg);}
     100% { transform: rotate(360deg);}
   }  
+
+  .js-loader{
+      overflow:hidden;
+  }
 /* /. */

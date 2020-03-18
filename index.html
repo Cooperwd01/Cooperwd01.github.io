@@ -51,7 +51,7 @@
             </style>
         </noscript>
     </head>
-    <body>
+    <body class="js-loader">
         <header data-aos="fade-down" data-aos-duration="1500">
             <!-- Skip to main content-->
             <a class="skip-link sr-only sr-only-focusable" href="#content">Skip to main content</a>
@@ -337,6 +337,12 @@
         <div class="loader-wrapper">
             <span class="loader"><span class="loader-inner"></span></span>
         </div>
+        <noscript>
+            <style>
+                .loader-wrapper{display:none;}
+                .js-loader{overflow:auto !important;}
+            </style>
+        </noscript>
         <!-- /. -->
         
         <!-- Footer -->
@@ -399,8 +405,11 @@
             });
         </script>
         <!-- loader script --> 
-        <script>$(window).on("load",function(){
-            $(".loader-wrapper").fadeOut("slow");
-       });</script>
+        <script>
+            $(window).on("load",function(){
+                $(".loader-wrapper").fadeOut("slow");
+                $( "body" ).removeClass( "js-loader" ); //stops scrolling when loading
+            });
+       </script>
     </body>
 </html>
