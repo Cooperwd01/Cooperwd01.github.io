@@ -871,6 +871,6 @@ Light Grey: #DEE0E2;
 
 /* resource page */
 #resource-links > a {
-    display:block;
+    display:inline-block;
     margin-top:15px;
 }
