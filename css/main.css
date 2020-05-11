@@ -868,3 +868,9 @@ Light Grey: #DEE0E2;
     font-size:20px;
     color: #333;
 }
+
+/* resource page */
+#resource-links > a {
+    display:block;
+    margin-top:15px;
+}
