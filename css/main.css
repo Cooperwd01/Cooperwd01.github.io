@@ -851,14 +851,21 @@ Light Grey: #DEE0E2;
 /* credit tiles */
 .img-tile{
     width:100%;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     display:block;
 }
-.img-tile:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+.credit-tag {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: #fff;
+    border-radius: 5px;
+    text-align:center;
+    font-size: 1.25em;
 }
+
+
+/* .img-tile:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+} */
 
 .show-title{
     color:#333;
@@ -869,8 +876,17 @@ Light Grey: #DEE0E2;
     color: #333;
 }
 
+span.chan-name {
+    font-weight: 900 !important;
+    display:block;
+}
+
 /* resource page */
 #resource-links > a {
     display:inline-block;
-    margin-top:15px;
+    margin-top:15px;   
 }
+
+
+ 
+ 
