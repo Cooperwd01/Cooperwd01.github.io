@@ -4,11 +4,14 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2em;
 }
-  
+
+h3 {
+  font-size: 1.5em;
+}
 span.sub-h1 {
-  font-size: 3em;
+  font-size: 2em;
   color: #575a63;
   font-weight: 800;
 }
@@ -33,21 +36,21 @@ p {
 .title-font{
   font-family: 'Abril Fatface', sans-serif;
   color: #191919;
-  font-size: 5em;
+  font-size: 3.5em;
 }
   
 @media only screen and (max-width:991px) {
   .title-font {
-    font-size: 4em;
+    font-size: 3em;
   }
 }
 
 @media only screen and (max-width:767px) {
   .title-font {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
   span.sub-h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 }
 .secondary-heading {
@@ -143,7 +146,7 @@ button.navbar-toggler:focus {
   
 .nav-link {
   color: #191919 !important;
-  border-bottom:solid 2px transparent;
+  border-bottom: solid 2px transparent;
   text-decoration: none;
 }
   
@@ -157,7 +160,7 @@ button.navbar-toggler:focus {
   }
   .nav-link{
     margin-bottom: 5px;
-    font-size: 1.35em;
+    font-size: 1.25em;
   }
   .nav-link:hover{
     color:#191919;
@@ -172,7 +175,7 @@ button.navbar-toggler:focus {
     outline: none;
     text-decoration: none;
     font-weight: 400;
-    font-size: 1.25em;
+    font-size: 1em;
     transition: border 0.5s;
     -webkit-transition: border 0.5s linear;
     -moz-transition: border 0.5s linear;
@@ -403,6 +406,7 @@ button > i {
 .btn-color:focus{
   outline: 3px solid white;
   transition: none;
+  box-shadow: none;
 }
 
 .btn-color:active{
@@ -583,7 +587,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
 
 /* FOOTER CSS */
 .footer-title{
-  font-size: 28px;
+  font-size: 22px;
   color:#fff;
   font-family: 'Abril Fatface', sans-serif;
   font-weight: 100;
@@ -598,7 +602,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
 .ftr-link{
   color: #fff;
   border-bottom:solid 2px transparent;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Questrial', sans-serif;
   padding: 2px;
   text-decoration: none;
