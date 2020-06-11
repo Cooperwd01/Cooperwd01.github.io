@@ -540,7 +540,11 @@ lite-youtube:hover{
   transform: scale(1.1);
 }
 
-
+@media only screen and (max-width:767px) {
+  lite-youtube:hover{
+    transform: scale(1.05);
+  }
+}
 /* END OF VID STYLES */
 
 /* back to top button */
