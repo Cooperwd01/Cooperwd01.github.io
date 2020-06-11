@@ -446,6 +446,7 @@ button.navbar-toggler.collapsed:focus {
   display: block;
   text-shadow: -3px 2px 3px #000000;
 }
+
 /* VIDEO PANEL CSS */
 .toon-bg{
   background-color: #DEE0E2;
@@ -454,11 +455,13 @@ button.navbar-toggler.collapsed:focus {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 @media only screen and (max-width:767px) {
   .toon-bg{
       background-image: url("/images/bg/bg-device.jpg");
   }
 }
+
 lite-youtube {
   background-color: #191919;
   position: relative;
@@ -487,11 +490,13 @@ lite-youtube::before {
   width: 100%;
   transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
+
 lite-youtube::after {
   content: "";
   display: block;
   padding-bottom: calc(100% / (16 / 9));
 }
+
 lite-youtube > iframe {
   width: 100%;
   height: 100%;
@@ -499,6 +504,7 @@ lite-youtube > iframe {
   top: 0;
   left: 0;
 }
+
 /* play button */
 lite-youtube > .lty-playbtn {
   width: 68px;
@@ -513,6 +519,7 @@ lite-youtube > .lty-playbtn {
   filter: grayscale(100%);
   transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
 }
+
 lite-youtube:hover > .lty-playbtn {
   filter: none;
 }
@@ -521,6 +528,7 @@ lite-youtube:hover > .lty-playbtn {
 lite-youtube.lyt-activated {
   cursor: unset;
 }
+
 lite-youtube.lyt-activated::before,
 lite-youtube.lyt-activated > .lty-playbtn {
   opacity: 0;
@@ -534,6 +542,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
   width: 40px;
   height: 40px;
 }
+
 #back-top {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -551,32 +560,38 @@ lite-youtube.lyt-activated > .lty-playbtn {
   box-shadow: 1px 2px 0px 0px rgba(25,25,25,1);
   opacity: 0.9;
 }
+
 #back-top:hover {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
+
 #back-top:focus{
   outline: 3px solid #191919;
 }
+
 @media only screen and (min-width:991px) {
   #back-top {
       right:18px;
       bottom: 170px;
   }
 }
+
 @media only screen and (min-width:768px) {
   #back-top {
       right:18px;
       bottom: 170px;
   }
 }
+
 @media only screen and (max-width:575px) {
   #back-top {
       bottom: 260px;
       right:15px
   }
 }
+
 @media only screen and (max-width:399px) {
   #back-top {
       bottom: 290px;
@@ -586,20 +601,23 @@ lite-youtube.lyt-activated > .lty-playbtn {
 /* --------------------------------------------------------------------------- */
 
 /* FOOTER CSS */
-.footer-title{
+.footer-title {
   font-size: 22px;
   color:#fff;
   font-family: 'Abril Fatface', sans-serif;
   font-weight: 100;
 }
-.footer-style{
+
+.footer-style {
   background-color:#191919; 
 }
-.ftr-nav-link{
+
+.ftr-nav-link {
   display:inline-block;
   margin-right: 1em;
 }
-.ftr-link{
+
+.ftr-link {
   color: #fff;
   border-bottom:solid 2px transparent;
   font-size: 18px;
@@ -607,19 +625,23 @@ lite-youtube.lyt-activated > .lty-playbtn {
   padding: 2px;
   text-decoration: none;
 }
-.ftr-link:hover{
+
+.ftr-link:hover {
   text-decoration: none;
   color: #fff;
 }
-.ftr-link:focus{
+
+.ftr-link:focus {
   outline: 2px solid #fff;
 }
+
 @media only screen and (max-width:400px) {
   .ftr-nav-link {
     display: block;
     margin-right: 0px;
   }
 }
+
 @media only screen and (max-width:767px) {
   .ftr-link{
     margin-bottom: 5px;
@@ -628,6 +650,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
     margin-right: 15px;
   }
 }
+
 @media only screen and (min-width:768px) {
   a.ftr-link{
     text-align: center;
@@ -641,6 +664,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
     -o-transition: border 0.5s linear;
   }
 }
+
 .footer-copyright {
   color:#fff;
   font-weight:800;
@@ -653,6 +677,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
   position: relative;
   color: #fff;
 }
+
 .ftr-underline-animation::after {
   content: '';
   position: absolute;
@@ -665,6 +690,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
+
 .ftr-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -687,6 +713,7 @@ ul.social-network {
   padding: 0;
   display:block;
 }
+
 ul.social-network li {
 	display: inline;
 }
@@ -695,28 +722,36 @@ ul.social-network li {
 .social-network a.icoRss:hover {
 	background-color: #F56505;
 }
+
 .social-network a.icoFacebook:hover {
 	background-color:#3B5998;
 }
+
 .social-network a.icoTwitter:hover {
 	background-color:#33ccff;
 }
+
 .social-network a.icoYoutube:hover {
 	background-color:#FF0000;
 }
+
 .social-network a.icoVimeo:hover {
 	background-color:#0590B8;
 }
+
 .social-network a.icoLinkedin:hover {
 	background-color:#007bb7;
 }
+
 .social-network a.icoYoutube:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
 	color:#fff;
 }
+
 a.socialIcon:hover, .socialHoverClass {
 	color:#44BCDD;
 }
+
 .social-circle li a {
 	display:inline-block;
 	position:relative;
@@ -732,11 +767,13 @@ a.socialIcon:hover, .socialHoverClass {
   -moz-box-shadow: 4px 4px 0px 0px rgba(25,25,25,1);
   box-shadow: 4px 4px 0px 0px rgba(25,25,25,1);
 }
+
 .social-circle li i {
 	margin:0;
 	line-height:50px;
 	text-align: center;
 }
+
 .social-circle li a:hover i, .triggeredHover {
 	-moz-transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
@@ -748,6 +785,7 @@ a.socialIcon:hover, .socialHoverClass {
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
 }
+
 .social-circle i {
 	color: #191919;
 	-webkit-transition: all 0.2s;
@@ -756,12 +794,15 @@ a.socialIcon:hover, .socialHoverClass {
 	-ms-transition: all 0.2s;
 	transition: all 0.2s;
 }
+
 a.soc-link {
   background-color: #FFF;   
 }
+
 a.soc-link:focus {
   outline: 2px solid #fff; 
 }
+
 footer {
   border-top:2px solid #191919;
 }
@@ -790,6 +831,7 @@ Light Grey: #DEE0E2;
   justify-content: center;
   align-items: center;
 }
+
 .loader {
   display: inline-block;
   width: 35px;
@@ -799,6 +841,7 @@ Light Grey: #DEE0E2;
   animation: loader 2s infinite ease;
   border-radius: 5px;
 }
+
 .loader-inner {
   vertical-align: top;
   display: inline-block;
@@ -806,13 +849,15 @@ Light Grey: #DEE0E2;
   background-color: #f9d70b;
   animation: loader-inner 2s infinite ease-in;
 }
+
 @keyframes loader {
   0% { transform: rotate(0deg);}
   25% { transform: rotate(180deg);}
   50% { transform: rotate(180deg);}
   75% { transform: rotate(360deg);}
   100% { transform: rotate(360deg);}
-}  
+}
+
 .js-loader{
     overflow: hidden;
 }
@@ -827,11 +872,13 @@ Light Grey: #DEE0E2;
   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   border-radius: 5px;
 }
+
 .img-tile:hover{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-} 
+}
+
 .credit-tag {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -841,14 +888,17 @@ Light Grey: #DEE0E2;
   text-align:center;
   font-size: 1.25em;
 }
+
 .show-title{
   color:#333;
 }
+
 .show-info {
   font-weight:600;
   font-size:20px;
   color: #333;
 }
+
 span.chan-name {
   font-weight: 900 !important;
   display:block;
@@ -859,5 +909,3 @@ span.chan-name {
   display:inline-block;
   margin-top:15px;   
 }
- 
- 
