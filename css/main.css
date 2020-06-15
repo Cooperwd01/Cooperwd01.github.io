@@ -68,8 +68,35 @@ a.skip-link {
   
 .nav-img{
   width: 80px;
+  -webkit-filter: drop-shadow(-2px 3px 2px rgba(34, 34, 34, 0.4));
+  filter: drop-shadow(-2px 3px 2px rgba(34, 34, 34, 0.4));
+  transition: all .2s ease-in-out; 
 }
-  
+
+.nav-img:hover {
+  animation: rotate 1.5s linear;
+  animation-iteration-count: 1;
+  filter: none;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* header */
+/* .fixed-header {
+  position: fixed;
+  width: 100%;
+  z-index: 10300;
+  margin-bottom: 100px;
+  display: block;
+  background-color: white;
+}
+
+#title-container{
+  padding-top: 100px
+} */
 /* Navbar */
 .nav-title {
   font-family: 'Questrial', sans-serif;
