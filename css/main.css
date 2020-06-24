@@ -567,11 +567,6 @@ lite-youtube:hover{
   transform: scale(1.1);
 }
 
-@media only screen and (max-width:767px) {
-  lite-youtube:hover{
-    transform: scale(1.025);
-  }
-}
 /* END OF VID STYLES */
 
 /* back to top button */
@@ -948,4 +943,11 @@ span.chan-name {
 #resource-links > a {
   display:inline-block;
   margin-top:15px;   
+}
+
+/* mobile styles */
+@media only screen and (max-width:767px) {
+  lite-youtube:hover, .img-tile:hover{
+    transform: none;
+  }
 }
