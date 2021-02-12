@@ -260,6 +260,11 @@ html, body {
   font-size:18px;
   color:#191919;
   scroll-behavior: smooth; 
+  background: #191919;
+}
+
+header {
+  background: #fff;
 }
 
 .main-style{
