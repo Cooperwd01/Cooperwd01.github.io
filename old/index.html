@@ -54,7 +54,7 @@
       </style>
     </noscript>
   </head>
-  <body>
+  <body class="js-loader">
     <header class="fixed-header">
       <!-- Skip to main content-->
       <a class="skip-link sr-only sr-only-focusable" href="#content">Skip to main content</a>
@@ -85,7 +85,7 @@
                   <a class="hover-underline-animation nav-link" href="#awards">Awards</a>
                 </li>
                 <li class="nav-item">
-                  <a class="hover-underline-animation nav-link" href="#contact">Contact us</a>
+                  <a class="hover-underline-animation nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -482,28 +482,32 @@
             <!-- <a id="contact" name="contact" class="anchor"></a> -->
             <div class="col">
               <h2 class="mt-3">
-                Contact us
+                Contact
               </h2>
             </div>
           </div> 
-          <form action="https://formspree.io/f/xjkvbopj" method="POST">
+          <form action="https://formspree.io/cooperbrotherswrite@gmail.com" method="POST">
             <div class="form-row mt-3">
-              <div class="col-12 col-md-8">
-                <div class="form-group">
-                  <label for="name">Your name</label>
-                  <input id="name" class="form-control contact-input" name="name" aria-required="true" required type="text">
-                </div>
-                <div class="form-group">
-                  <label for="email">Your email address</label>
-                  <input id="email" class="form-control contact-input" aria-required="true" required name="_replyto" type="email" spellcheck="false">
-                </div>
-                <div class="form-group">
-                  <label for="message">Your message</label>
-                  <textarea id="message" rows="3" class="form-control wide-input contact-input" aria-required="true" required name="message"></textarea>
-                </div>
-                <div class="form-group">
-                  <button class="btn-color btn btn-primary" type="submit" value="Send"><i class="far fa-paper-plane" aria-hidden="true"></i> Send</button>
-                </div>
+              <div class="form-group col-md-4">
+                <label for="first-name">First name</label>
+                <input id="first-name" class="form-control contact-input" aria-required="true" required type="text">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="last-name">Last name</label>
+                <input id="last-name" class="form-control contact-input" aria-required="true" required type="text">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="email">Email</label>
+                <input id="email" class="form-control contact-input" aria-required="true" required type="email" name="_replyto" placeholder="email@example.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-8">
+                <label for="message">Message</label>
+                <textarea id="message" rows="3" class="form-control wide-input contact-input" aria-required="true" required name="text" placeholder="My megaphone broke, but you don't hear me complaining about it" onfocus="this.placeholder = ''" onblur="this.placeholder = 'You were expecting another joke for free?!'"></textarea>
+              </div>
+              <div class="form-group col-md-4">
+                <button class="btn-color btn btn-primary" type="submit" value="Send"><i class="far fa-paper-plane" aria-hidden="true"></i> Send</button>
               </div>
             </div>
           </form>
@@ -512,9 +516,21 @@
       <!-- /. --> 
 
       <!-- Back to top button -->    
-      <!-- <button class="top-button" id="back-top" title="Go to top"><img src="images/backtotop-small.png" class="top-link-img" alt="Back to top, baby" /></button> -->
+      <button class="top-button" id="back-top" title="Go to top"><img src="images/backtotop-small.png" class="top-link-img" alt="Back to top, baby" /></button>
                     
     </main>
+
+    <!-- LOADER -->
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <noscript>
+      <style>
+        .loader-wrapper{display:none;}
+        .js-loader{overflow:auto !important;}
+      </style>
+    </noscript>
+    <!-- /. -->
         
     <!-- Footer -->
     <footer class="footer-style page-footer font-small pt-3 pb-3">
@@ -526,7 +542,7 @@
               <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#about-us">About</a></li>
               <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link"  href="#credits">Credits</a></li>
               <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#awards">Awards</a></li>
-              <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#contact">Contact us</a></li>
+              <li class="ftr-nav-link"><a class="ftr-underline-animation ftr-link" href="#contact">Contact</a></li>
             </ul>
           </div>    
           <div class="col-md-4 mt-3-md">    
@@ -550,7 +566,7 @@
     <script type="text/javascript" src="js/app.js"></script>
       
     <!-- AOS library 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- AOS init 
     <script>
       AOS.init({
@@ -574,5 +590,12 @@
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
       });
     </script>-->
+    <!-- loader script --> 
+    <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+        $( "body" ).removeClass( "js-loader" ); //stops scrolling when loading
+      });
+    </script>
   </body>
 </html>
