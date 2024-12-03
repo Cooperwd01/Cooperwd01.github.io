@@ -1,8 +1,10 @@
 /*2024 styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
+
 /* variables */
 :root {
-  --primary-font: 'Abril Fatface', sans-serif;
+  --primary-font: "Sniglet", sans-serif;
   --dark-gray: #575a63;
   --black: #191919;
   --white: #fff;
@@ -100,19 +102,7 @@ a.skip-link {
     transform: rotate(1turn);
   }
 }
-/* header */
-/* .fixed-header {
-  position: fixed;
-  width: 100%;
-  z-index: 10300;
-  margin-bottom: 100px;
-  display: block;
-  background-color: white;
-}
 
-#title-container{
-  padding-top: 100px
-} */
 /* Navbar */
 .nav-title {
   font-family: 'Questrial', sans-serif;
@@ -258,14 +248,16 @@ button.navbar-toggler:focus {
 }
 /* end of underline animation */
   
-/* doc highlight */
+/* doc highlight 
 ::selection {
-  background: #ff12c8bf; /* WebKit/Blink Browsers */
+  background: #ff12c8bf;
 }
 
 ::-moz-selection {
-  background: #ff12c8bf; /* Gecko Browsers */
+  background: #ff12c8bf;
 }
+*/
+
 /* END OF HEADER CSS */
 
 /* --------------------------------------------------------------------------- */
@@ -273,7 +265,7 @@ button.navbar-toggler:focus {
 html, body {
   margin: 0px;
   font-family: 'Questrial', sans-serif;
-  font-size:18px;
+  font-size: 1.15rem;
   color: var(--black);
   scroll-behavior: smooth; 
   background: var(--black);
@@ -387,7 +379,6 @@ form {
 .form-color{
   background-color: #DEE0E2;
   color:var(--black);
-  font-weight:800;
 }
 
 .form-group{
@@ -405,12 +396,13 @@ input:focus, textarea:focus{
 .contact-input{
   width:100%;
   outline: 3px solid transparent;
+  border: 2px solid black;
 }
 
 .wide-input {
   width: 95%;
   outline: 3px solid transparent;
-  border: none;
+  border: 2px solid var(--black);
 }
 
 @media only screen and (min-width:767px) {
@@ -424,7 +416,7 @@ input:focus, textarea:focus{
 
 .contact-input:focus{
   outline: 3px solid var(--black);
-  border: none;
+  border: 2px solid var(--black);
 }
 
 input[type=text], input[type=email], textarea{
@@ -481,13 +473,6 @@ button.navbar-toggler.collapsed:focus {
 
 .credit-list > li {
   margin-bottom: 10px;
-}
-
-/* background texture */
-.txt-bg {
-  background-color: var(--black);
-  background-image: url("/images/bg/asfalt-light.png");
-  color: var(--white);
 }
 
 /* NO JS text */
@@ -593,67 +578,41 @@ lite-youtube:hover{
 
 /* END OF VID STYLES */
 
-/* back to top button */
-.top-link-img {
-  width: 40px;
-  height: 40px;
+
+/* credtis */
+.credit-list {
+  list-style:none;
+  padding-left: 0px;
+  margin-bottom: 0px;
 }
 
-#back-top {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 245px; 
-  right: 18px; 
-  z-index: 99; 
-  border: 2px solid var(--black);
-  outline: none; 
-  background-color: var(--dark-gray);
-  cursor: pointer; 
-  padding: 5px; 
-  border-radius: 50%; 
-  -webkit-box-shadow: 1px 2px 0px 0px rgba(25,25,25,1);
-  -moz-box-shadow: 1px 2px 0px 0px rgba(25,25,25,1);
-  box-shadow: 1px 2px 0px 0px rgba(25,25,25,1);
-  opacity: 0.9;
+.credit-list > li {
+  margin-bottom: 10px;
 }
 
-#back-top:hover {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+.credit--radio::before {
+  content: "🔈";
+  margin-right: 15px;
+}
+.credit--tv::before {
+  content: "📺";
+  margin-right: 15px;
+}
+.credit--online::before {
+  content: "📱";
+  margin-right: 15px;
 }
 
-#back-top:focus{
-  outline: 3px solid var(--black);
+.credit--theatre::before {
+  content: "🎭";
+  margin-right: 15px;
 }
 
-@media only screen and (min-width:991px) {
-  #back-top {
-      right:18px;
-      bottom: 170px;
-  }
+.credit--awards::before {
+  content: "🏆";
+  margin-right: 15px;
 }
 
-@media only screen and (min-width:768px) {
-  #back-top {
-      right:18px;
-      bottom: 170px;
-  }
-}
-
-@media only screen and (max-width:575px) {
-  #back-top {
-      bottom: 260px;
-      right:15px
-  }
-}
-
-@media only screen and (max-width:399px) {
-  #back-top {
-      bottom: 290px;
-      right: 10px;
-  }
-}
 /* --------------------------------------------------------------------------- */
 
 /* FOOTER CSS */
@@ -787,6 +746,10 @@ ul.social-network li {
 	background-color:#33ccff;
 }
 
+.social-network a.icoTiktok:hover {
+	background-color: #fe2858;
+}
+
 .social-network a.icoYoutube:hover {
 	background-color:#FF0000;
 }
@@ -800,7 +763,7 @@ ul.social-network li {
 }
 
 .social-network a.icoYoutube:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
-.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i, .social-network a.icoTiktok:hover i {
 	color:var(--white);
 }
 
@@ -875,49 +838,7 @@ Light Grey: #DEE0E2;
 
 */
 
-/* loader css */
-.loader-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--black);
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.loader {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  position: relative;
-  border: 4px solid var(--yellow);
-  animation: loader 2s infinite ease;
-  border-radius: 5px;
-}
-
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: var(--yellow);
-  animation: loader-inner 2s infinite ease-in;
-}
-
-@keyframes loader {
-  0% { transform: rotate(0deg);}
-  25% { transform: rotate(180deg);}
-  50% { transform: rotate(180deg);}
-  75% { transform: rotate(360deg);}
-  100% { transform: rotate(360deg);}
-}
-
-.js-loader{
-    overflow: hidden;
-}
-/* /. */
 
 /* credit tiles */
 .img-tile{
@@ -995,4 +916,3 @@ p.p-title {
 .credit-link {
   display:block;
 }
-

@@ -98,18 +98,3 @@ class LiteYTEmbed extends HTMLElement {
 }
 // Register custome element
 customElements.define('lite-youtube', LiteYTEmbed);
-
-// Show scroll to top
-$(document).scroll(function() {
-    var y = $(this).scrollTop();
-    if (y > 2500) {
-      $('.top-button').fadeIn();
-    } else {
-      $('.top-button').fadeOut();
-    }
-  });
-
-  //on click scroll to top
-  $('#back-top').click(function(){
-    $('html, body').animate({scrollTop:0}, 'fast');
-  });
