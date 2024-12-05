@@ -322,6 +322,10 @@ header {
   border-right: 10px solid white;
 } 
 
+.carousel-inner {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 /* mobile style */
 @media only screen and (min-width:992px) {
   .polaroid-text {
