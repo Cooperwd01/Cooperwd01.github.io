@@ -26,7 +26,7 @@ h3 {
 span.sub-h1 {
   font-size: 2em;
   color: var(--dark-gray);
-  font-weight: 800;
+  font-weight: 400;
 }
 
 a {
@@ -291,11 +291,11 @@ header {
   padding: 0px 10px;
   display: block;
   text-align: center;
-  font-family: 'Schoolbell', sans-serif;
+  font-family: var(--primary-font);
   color: var(--black);
   word-break: normal;
   border: none !important;
-  outline:1px solid white !important;
+  outline: 1px solid var(--white) !important;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -400,11 +400,11 @@ input:focus, textarea:focus{
 .contact-input{
   width:100%;
   outline: 3px solid transparent;
-  border: 2px solid black;
+  border: 2px solid var(--black);
 }
 
 .wide-input {
-  width: 95%;
+  width: 100%;
   outline: 3px solid transparent;
   border: 2px solid var(--black);
 }
@@ -414,7 +414,7 @@ input:focus, textarea:focus{
     width: 70%;
   }
   .wide-input {
-    width: 100%;
+    width: 70%;
   }
 }
 
@@ -430,7 +430,9 @@ input[type=text], input[type=email], textarea{
 .btn-color {
   background-color:var(--black);
   border: 2px solid transparent; 
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   transition: .4s ease-in-out;
+  font-size: 1.15rem;
 }
 
 @media only screen and (max-width:767px) {
@@ -451,7 +453,8 @@ button > i {
 }
 
 .btn-color:focus{
-  outline: 3px solid white;
+  outline: 3px solid var(--black);
+  border:3px solid var(--white);
   transition: none;
   box-shadow: none !important;
 }
@@ -591,10 +594,24 @@ lite-youtube:hover{
 }
 
 .credit-list > li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid silver;
 }
 
-.credit--radio::before {
+.title--radio::before{
+  content: "🔈";
+  margin-right: 15px;
+}
+.title--tv::before {
+  content: "📺";
+  margin-right: 15px;
+}
+.title--theatre::before{
+  content: "🎭";
+  margin-right: 15px;
+}
+/* .credit--radio::before {
   content: "🔈";
   margin-right: 15px;
 }
@@ -610,6 +627,12 @@ lite-youtube:hover{
 .credit--theatre::before {
   content: "🎭";
   margin-right: 15px;
+} */
+
+.credit-info {
+  display:block;
+  color: var(--dark-gray);
+  font-size: 1rem;
 }
 
 .credit--awards::before {
