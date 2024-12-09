@@ -847,6 +847,7 @@ a.soc-link {
 
 a.soc-link:focus {
   outline: 2px solid var(--white); 
+  outline-offset: 5px;
 }
 
 footer {
