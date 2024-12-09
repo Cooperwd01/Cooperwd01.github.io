@@ -461,7 +461,7 @@ button > i {
 
 .btn-color:active{
   background-color:var(--white) !important; 
-  border: 2px solid var(--black) !important;
+  border: 3px solid var(--black) !important;
   color: var(--black) !important;
   outline: 3px solid white !important;
 }
@@ -598,7 +598,7 @@ lite-youtube:hover{
   padding-bottom: 10px;
   border-bottom: 1px solid silver;
 }
-
+/* 
 .title--radio::before{
   content: "🔈";
   margin-right: 15px;
@@ -610,7 +610,7 @@ lite-youtube:hover{
 .title--theatre::before{
   content: "🎭";
   margin-right: 15px;
-}
+} */
 /* .credit--radio::before {
   content: "🔈";
   margin-right: 15px;
